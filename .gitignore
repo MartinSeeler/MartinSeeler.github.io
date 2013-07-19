@@ -1,1 +1,9 @@
+# Jekyll and SASS
 _site/
+.sass-cache/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
