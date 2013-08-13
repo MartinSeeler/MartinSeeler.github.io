@@ -1,0 +1,16 @@
+code {
+  padding: 2px 4px;
+  color: #D14;
+  background-color: lighten($quieter-color,6%);
+  border: 1px solid lighten($quiet-color,6%);
+  white-space: nowrap;
+}
+
+code, pre {
+  padding: 0 3px 2px;
+  font-size: 12px;
+  color: darken($font-color, 20%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}

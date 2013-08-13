@@ -1,0 +1,16 @@
+button.btn {
+  @include button-button;
+  @include button-colors;
+  @include button-hover-colors;
+  @include button-active-colors;
+  @include single-transition(background-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+
+  &:HOVER {
+    @include single-transition(color);
+  }
+}

@@ -1,0 +1,77 @@
+body > footer {
+
+    border-top: 1px solid $quieter-color;
+    padding: $blueprint-font-size * 2 0;
+    text-align: center;
+    font-size: 16px;
+
+    .container {
+        $column-width   : 6em;
+        $total-columns  : 8;
+        @include container;
+    }
+
+    p {
+        @include inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    i {
+        color: $color-secondary;
+        padding: 0 5px;
+    }
+
+    ul.social-media-links {
+        padding-bottom: 72px;
+        padding-top: 36px;
+        @include set-container-width;
+        li {
+            @include span-columns(1, 8);
+            list-style: none;
+            font-size: 36px;
+            &:LAST-CHILD {
+                @include omega;
+            }
+        }
+
+
+        i {
+            color: $font-color;
+        }
+
+        a {
+            @include link-colors($font-color, $font-color, $font-color, $font-color, $font-color);
+            text-decoration: none;
+            //padding: 36px;
+            @include single-transition;
+            @include opacity(0.2);
+            &:HOVER {
+                @include opacity(1);
+            }
+        }
+    }
+}
+
+section > footer {
+    margin-top: $blueprint-font-size * 3;
+}
+
+.avatar-wrapper {
+  @include inline-block;
+  border-top: 1px solid $quieter-color;
+  padding: 50px 0;
+  $img-height: 125px;
+  img.avatar {
+    @include span-columns(5,24);
+    //border: 2px solid $color-secondary;
+    background-position: center center;
+    border-radius: 50%;
+}
+.avatar-desc {
+  @include span-columns(18 omega,24);
+  h2 {
+    font-size: 28px;
+}
+}
+}

@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+
+<section>
+  {% for post in site.posts %}
+  <div class="post-wrapper">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="post-meta">
+      <span class="date"><i class="icon-calendar-empty"></i>{{ post.date | date_to_string }}</span>
+      <span class="tags"><i class="icon-tags"></i>Sit / Dolor / Ipsum / Lorem</span>
+    </div>
+  </div>
+  {% endfor %}
+</section>

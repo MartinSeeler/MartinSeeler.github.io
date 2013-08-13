@@ -1,0 +1,37 @@
+// SUSY GRID
+$total-columns  : 12;
+$column-width   : 3em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+// FONTS
+$blueprint-font-family: 'Open Sans', sans-serif;
+$blueprint-fixed-font-family: 'Source Code Pro', sans-serif;
+$blueprint-font-size: 18px;
+
+// COLORS
+$color-primary: #2ecc71;
+$color-secondary: #a2e5bc;
+$color-tertiary: #2c3e50;
+
+$font-color: #55606A;
+$quiet-color: #A3A3A3;
+$quieter-color: #E9E9E9;
+
+// BUTTONS
+$blueprint-button-font-family: $blueprint-font-family;
+
+$blueprint-button-border-color: $color-primary;
+$blueprint-button-background-color: $color-primary;
+$blueprint-button-font-color: #FFF;
+
+$blueprint-button-hover-border-color: $color-tertiary;
+$blueprint-button-hover-background-color: $color-tertiary;
+$blueprint-button-hover-font-color: #FFF;
+
+$blueprint-button-active-border-color: $color-tertiary;
+$blueprint-button-active-background-color: $color-tertiary;
+$blueprint-button-active-font-color: $color-secondary;
+
+// TRANSITIONS
+$default-transition-duration : 0.25s;
