@@ -1,6 +1,7 @@
 $debug-mode: false !default;
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
 
 // import blueprints
 @import "blueprint/reset";
@@ -11,10 +12,10 @@ $debug-mode: false !default;
 @import "blueprint/buttons";
 
 // import compass
-@import "blueprint/buttons";
 @import "compass/css3";
 @import "compass/utilities";
 
+// import grid
 @import "susy";
 
 // import base settings
@@ -29,11 +30,19 @@ $debug-mode: false !default;
 }
 
 body {
-  //@include blueprint-typography(true);
-  //@include blueprint-utilities;
+  @include blueprint-utilities;
   @if $debug-mode {
     @include blueprint-debug;
   }
+
+  overflow-y: scroll;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: $font-color;
+
+  line-height: 30px; 
 
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -41,9 +50,32 @@ body {
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+    font-weight: 700;
+    font-family: 'Arvo', sans-serif;
+}
 
+h1 {
+    font-size: 42px;
+    line-height: 84px;
+}
+
+h2 {
+    font-size: 29.124px;
+    line-height: 60px;
+    padding: {
+      top: 15px;
+      bottom: 15px;
+    }
+}
+
+// import partials
 @import "partials/header";
+@import "partials/posts";
 @import "partials/buttons";
 @import "partials/syntax";
 @import "partials/footer";
+
+// load icon font
 @import "vendor/font-awesome/font-awesome";

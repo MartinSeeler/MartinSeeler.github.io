@@ -1,0 +1,35 @@
+ul.post-list {
+
+
+	li {
+		list-style-type: none;
+		padding-bottom: 30px;
+	}
+
+	p {
+		padding-top: 15px;
+	}
+
+}
+
+.post-wrapper {
+
+	a {
+		text-decoration: none;
+		font-family: "Arvo";
+		font-size: 42px;
+    	line-height: 84px;
+    	font-weight: 700;
+    	color: #444;
+	}
+
+}
+
+.post-meta {
+	font-size: 12px;
+	color: $quiet-color;
+}
+
+article header {
+	padding-bottom: 15px;
+}

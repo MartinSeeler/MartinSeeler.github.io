@@ -1,11 +1,12 @@
 body > header {
 
+    border-bottom: 1px solid $quieter-color;
+    margin-bottom: 30px;
+
     .header-master {
         padding: 15px 0;
     }
 
-    //background-color: #202020;
-    border-bottom: 1px solid $quieter-color;
 
     $img-size: 60px;
 
@@ -19,22 +20,21 @@ body > header {
 
     .blog-name {
         display: inline-block;
-        padding-left: 15px;
-        padding-top: 5px;
-        line-height: 1.5em;
-
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
+        padding: {
+            left: 15px;
+            top: 5px;
+        }
+        line-height: 1.35em;
 
         .blog-title a {
-            color: #202020;
             font-size: 18px;
+            color: $font-color;
             text-decoration: none;
         }
 
         .blog-sub {
             font-size: 14px;
-            color: #b0b0b0;
+            color: $quiet-color;
         }
     }
 

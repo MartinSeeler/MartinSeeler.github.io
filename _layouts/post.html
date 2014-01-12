@@ -1,9 +1,12 @@
 ---
 layout: blog
 ---
-<section>
+<article class="container">
   <header>
     <h1>{{ page.title}}</h1>
+  </header>
+  {{ content }}
+  <footer>
     <div class="post-meta">
       <!-- date_to_xmlschema -->
       <span class="date"><i class="icon-calendar-empty"></i>{{ page.date | date_to_string }}</span>
@@ -13,16 +16,5 @@ layout: blog
         {% endfor %}
       </span>
     </div>
-  </header>
-  {{ content }}
-
-  <footer>
-    <div class="avatar-wrapper">
-      <img class="avatar" src="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b.png?s=250">
-      <div class="avatar-desc">
-        <h2>About the Author</h2>
-        <p>Martin Seeler is a 23 years young software developer and web designer based in Dresden, Germany with a passion for new technologies and Open Source projects. <a href="/about.html">Learn more</a></p>
-      </div>
-    </div>
   </footer>
-</section>
+</article>

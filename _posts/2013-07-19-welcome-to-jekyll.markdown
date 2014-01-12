@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll - with a longer title"
 date:   2013-07-19 13:09:01
 tags: jekyll lorem ipsum
 ---

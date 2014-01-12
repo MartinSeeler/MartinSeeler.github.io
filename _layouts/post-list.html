@@ -10,6 +10,7 @@ layout: blog
       <span class="date"><i class="icon-calendar-empty"></i>{{ post.date | date_to_string }}</span>
       <span class="tags"><i class="icon-tags"></i>Sit / Dolor / Ipsum / Lorem</span>
     </div>
+    <p>{{ post.content | strip_html | truncatewords:75}}</p>
   </div>
   {% endfor %}
 </section>
