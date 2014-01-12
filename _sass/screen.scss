@@ -1,7 +1,6 @@
 $debug-mode: false !default;
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
 // import blueprints
 @import "blueprint/reset";
@@ -9,7 +8,6 @@ $debug-mode: false !default;
 @import "blueprint/typography";
 @import "blueprint/utilities";
 @import "blueprint/colors";
-//@import "blueprint/scaffolding";
 @import "blueprint/buttons";
 
 // import compass
@@ -19,157 +17,29 @@ $debug-mode: false !default;
 
 @import "susy";
 
-// import modules
-//@import "modules/theme";
-
-
-
 // import base settings
 @import "partials/base";
 
 
-.container, section {
+.container {
   @include container;
   @if $debug-mode {
     @include susy-grid-background;
   }
 }
 
-.about-wrapper {
-  padding-top: $blueprint-font-size*3;
-  padding-bottom: 0;
-  @include container;
-  text-align: center;
-
-  img {
-    border-radius: 50%;
-  }
-
-  h1 {
-    padding-top: $blueprint-font-size*2;
-    font-size: $blueprint-font-size*3;
-    color: $color-tertiary;
-  }
-
-  h2 {
-    font-size: 32px;
-    color: $quiet-color;
-  }
-}
-
 body {
-  @include blueprint-typography(true);
-  @include blueprint-utilities;
+  //@include blueprint-typography(true);
+  //@include blueprint-utilities;
   @if $debug-mode {
     @include blueprint-debug;
   }
 
-  font-weight: 300;
-  line-height: 30px;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
-  h1, h2, h3, h4, h5, h6 {
-    color: #4C4F55;
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h3 {
-    font-size: 28px;
-  }
-
-  blockquote {
-    margin-left: 0;
-    padding-left: 1.5em;
-    border-left: 2px solid $color-secondary;
-    color: $quiet-color;
-  }
-
-  mark {
-    background-color: $color-secondary;
-  }
-
 }
-
-.post-wrapper {
-  padding: 24px 0;
-  border-bottom: 1px solid $quieter-color;
-  list-style: none;
-
-  &:FIRST-CHILD {
-    padding-top: 0;
-  }
-
-  &:LAST-CHILD {
-    border-bottom: none;
-  }
-
-  a {
-    font-size: 36px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    @include link-colors($font-color, $color-primary, $color-primary, $font-color, $color-tertiary);
-  }
-}
-
-
-
-
-body > section  {
-  margin-top: 5*$blueprint-font-size;
-  margin-bottom: 36px*2;
-  p {
-    text-align: justify;
-  }
-
-  a {
-    text-decoration: none;
-    font-weight: 600;
-    @include single-transition;
-    @include link-colors($color-primary, $color-tertiary, $color-tertiary, $color-secondary, $color-secondary);
-  }
-}
-
-
-
-section {
-  //@include clearfix;
-  & > header {
-    padding-bottom: $blueprint-font-size * 1.5;;
-
-    h1 {
-      @include inline-block;
-      margin: 0;
-      padding-bottom: 8px;
-      border-bottom :  1px solid $color-secondary;
-      letter-spacing: 3px;
-    }
-
-
-  }
-}
-
-div.post-meta {
-  padding-top: 3px;
-  color: #AEAEAE;
-  font-size: 14px;
-  text-transform: uppercase;
-  i {
-    color: $color-secondary;
-  }
-  i, span {
-    padding-right: 10px;
-  }
-}
-
 
 
 @import "partials/header";
