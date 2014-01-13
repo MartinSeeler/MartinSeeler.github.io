@@ -1,16 +1,29 @@
-code {
-  padding: 2px 4px;
-  color: #D14;
-  background-color: lighten($quieter-color,6%);
-  border: 1px solid lighten($quiet-color,6%);
-  white-space: nowrap;
+pre {
+  font-family: "Source Code Pro";
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.4;
+
+  overflow-wrap: break-word;
+  word-wrap: normal;
+  white-space: pre-wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-code, pre {
-  padding: 0 3px 2px;
-  font-size: 12px;
-  color: darken($font-color, 20%);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+.hljs {
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  padding: 1em !important;
+}
+
+code {
+  font-family: "Source Code Pro";
+  background-color: #f8f8f8;
+  border: 1px solid #DDD;
+  font-size: 14px;
+  font-weight: 200;
+  color: #333;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
