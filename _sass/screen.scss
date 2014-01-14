@@ -2,7 +2,7 @@ $debug-mode: false !default;
 
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,600);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600);
 
 
 // import blueprints
@@ -38,6 +38,7 @@ body {
   }
 
   overflow-y: scroll;
+  padding-top: 110px;
 
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -78,6 +79,8 @@ a.top {
   bottom: 20px;
   text-decoration: none;
   color: #222;
+  padding: 5px 15px;
+  background-color: #FFF;
 }
 
 // import partials

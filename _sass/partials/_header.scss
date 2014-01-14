@@ -1,7 +1,13 @@
 body > header {
 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
     border-bottom: 1px solid $quieter-color;
-    margin-bottom: 30px;
+    background-color: #FFF;
+    // margin-bottom: 30px;
 
     .header-master {
         padding: 15px 0;
@@ -19,7 +25,8 @@ body > header {
     }
 
     .blog-name {
-        display: inline-block;
+        @include inline-block;
+        white-space: nowrap;
         padding: {
             left: 15px;
             top: 5px;
@@ -28,7 +35,7 @@ body > header {
 
         .blog-title a {
             font-size: 18px;
-            color: $font-color;
+            color: #000;
             text-decoration: none;
         }
 

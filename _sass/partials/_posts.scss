@@ -2,7 +2,7 @@ ul.post-list {
 
 	li.post-wrapper {
 		list-style-type: none;
-		display: inline-block;
+		@include inline-block;
 		padding-bottom: 30px;
 		padding-top: 15px;
 		border-bottom: 1px solid lighten($quieter-color, 5%);
@@ -22,11 +22,8 @@ ul.post-list {
 			font-size: 42px;
 	    	line-height: 84px;
 	    	font-weight: 700;
-	    	color: #444;
-
-	    	&:HOVER {
-	    		color: #3498db;
-	    	}
+	    	@include link-colors(#444, #4FC1E9, #3BAFDA, #ccc, #cc0);
+			@include single-transition(color, 0.25s);
 		}
 
 	}
@@ -71,6 +68,16 @@ a.read-more {
 	text-decoration: none;
 }
 
-article header {
+
+article > header {
 	padding-bottom: 15px;
+}
+
+article {
+	a {
+		text-decoration: none;
+		font-weight: 400;
+		@include link-colors(#4FC1E9, #3BAFDA, #3BAFDA, #ccc, #cc0);
+		@include single-transition(color, 0.25s);
+	}
 }
