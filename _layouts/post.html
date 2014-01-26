@@ -1,20 +1,20 @@
 ---
 layout: blog
 ---
+
 <article class="container">
-  <header>
-    <h1>{{ page.title}}</h1>
-  </header>
-  {{ content }}
-  <footer>
-    <div class="post-meta">
-      <!-- date_to_xmlschema -->
-      <span class="date"><i class="icon-calendar-empty"></i>{{ page.date | date_to_string }}</span>
-      <span class="tags"><i class="icon-tags"></i>
-        {% for tag in page.tags %}
-        {{ tag }}{% unless forloop.last %} / {% endunless %}
-        {% endfor %}
-      </span>
-    </div>
-  </footer>
+    <header>
+        <hgroup>
+            <h1>{{ page.title}}</h1>
+        </hgroup>
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}"><i class="icon-calendar-empty"></i>{{ page.date | date: "%A, %-d. %B %Y" }}</time>
+    </header>
+    {{ content | replace: '-&gt;', '<i class="icon-long-arrow-right"></i>' | replace: '&lt;-', '<i class="icon-long-arrow-left"></i>' | replace: '&gt;', '<i class="icon-angle-right"></i>' | replace: '&lt;', '<i class="icon-angle-left"></i>' | replace: '^2', '&sup2;' }}
+    <footer>
+        <ul class="tags">
+            {% for tag in page.tags %}
+            <li class="tag">{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    </footer>
 </article>

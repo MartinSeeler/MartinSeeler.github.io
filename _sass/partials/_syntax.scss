@@ -1,29 +1,31 @@
-pre {
-  font-family: "Source Code Pro";
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.4;
+/* Code and syntax highlighting. */
 
+pre, code {
+  font: {
+    family: $fixed-font-family;
+    size: 14px;
+    weight: 300;
+  }
+}
+
+pre {
+  line-height: 1.4;
   overflow-wrap: break-word;
   word-wrap: normal;
   white-space: pre-wrap;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 2 * $default-space;
 }
 
 .hljs {
-  @include border-radius(5px);
   border: 1px solid #DDD;
   padding: 1em !important;
+  @include border-radius(5px);
 }
 
 code {
-  font-family: "Source Code Pro";
-  background-color: #f8f8f8;
-  border: 1px solid #DDD;
-  font-size: 14px;
-  font-weight: 300;
+  background-color: $quietest-color;
   color: #333;
+  border: 1px solid #DDD;
   padding: 2px 8px;
   @include border-radius(4px);
 }

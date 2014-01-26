@@ -1,9 +1,7 @@
+// set debug mode to true will show the grid
 $debug-mode: false !default;
 
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600);
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Arvo:700,700italic|Cousine:400,700);
 
 // import blueprints
 @import "blueprint/reset";
@@ -22,6 +20,7 @@ $debug-mode: false !default;
 
 // import base settings
 @import "partials/base";
+@import "partials/typo";
 
 
 .container {
@@ -37,40 +36,11 @@ body {
     @include blueprint-debug;
   }
 
+  // prevent flickering on long content
   overflow-y: scroll;
-  padding-top: 110px;
+  padding-top: 125px;
 
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  color: $font-color;
-
-  line-height: 30px; 
-
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #444;
-    font-weight: 700;
-    font-family: 'Arvo', sans-serif;
-}
-
-h1 {
-    font-size: 42px;
-    line-height: 84px;
-}
-
-h2 {
-    font-size: 29.124px;
-    line-height: 60px;
-    padding: {
-      top: 15px;
-      bottom: 15px;
-    }
+  @include font;
 }
 
 a.top {
@@ -79,16 +49,19 @@ a.top {
   bottom: 20px;
   text-decoration: none;
   color: #222;
+  font-weight: 300;
   padding: 5px 15px;
   background-color: #FFF;
 }
 
-// import partials
+article {
+  padding-bottom: 2 * $default-space;
+}
+
 @import "partials/header";
 @import "partials/posts";
-@import "partials/buttons";
 @import "partials/syntax";
-@import "partials/footer";
+
 
 // load icon font
 @import "vendor/font-awesome/font-awesome";

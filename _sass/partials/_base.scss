@@ -1,37 +1,54 @@
 // SUSY GRID
-$total-columns  : 12;
-$column-width   : 3em;
-$gutter-width   : 1em;
-$grid-padding   : $gutter-width;
+$total-columns: 12;
+$column-width: 3em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
 
 // FONTS
-$blueprint-font-family: 'Roboto', sans-serif;
-$blueprint-fixed-font-family: 'Source Code Pro', sans-serif;
-$blueprint-font-size: 18px;
+@include font-face("Blooming Grove", font-files("examples/bgrove.ttf", "examples/bgrove.otf"));
+
+$fixed-font-family: 'Cousine', sans-serif;
+$font-family: 'Source Sans Pro', sans-serif;
+$font-size: 18px;
+$font-weight: 300;
+
+$headline-font-family: 'Arvo', sans-serif;
+$headline-font-size: 42px;
+$headline-font-weight: 700;
+$headline-ratio: 1.61803399;
+
+// SPACES
+$default-space: 15px;
 
 // COLORS
-$color-primary: #2ecc71;
+$color-primary: #FF7777;
 $color-secondary: #a2e5bc;
 $color-tertiary: #2c3e50;
 
+$color-primary-dark: darken($color-primary, 10%);
+
 $font-color: #202020;
+$font-color-light: #444;
 $quiet-color: #b0b0b0;
 $quieter-color: #E9E9E9;
+$quietest-color: #F6F6F6;
 
 // BUTTONS
-$blueprint-button-font-family: $blueprint-font-family;
+$blueprint-button-font-family: $font-family;
 
-$blueprint-button-border-color: $color-primary;
-$blueprint-button-background-color: $color-primary;
-$blueprint-button-font-color: #FFF;
+$blueprint-button-border-color: $quieter-color;
+$blueprint-button-border-highlight-color: $quieter-color;
+$blueprint-button-background-color: #FFF;
+$blueprint-button-font-color: $color-primary;
 
-$blueprint-button-hover-border-color: $color-tertiary;
-$blueprint-button-hover-background-color: $color-tertiary;
+$blueprint-button-hover-border-color: $color-primary-dark;
+$blueprint-button-hover-border-highlight-color: $color-primary-dark;
+$blueprint-button-hover-background-color: $color-primary-dark;
 $blueprint-button-hover-font-color: #FFF;
 
-$blueprint-button-active-border-color: $color-tertiary;
-$blueprint-button-active-background-color: $color-tertiary;
-$blueprint-button-active-font-color: $color-secondary;
+$blueprint-button-active-border-color: $color-primary-dark;
+$blueprint-button-active-background-color: $color-primary-dark;
+$blueprint-button-active-font-color: #FFF;
 
 // TRANSITIONS
-$default-transition-duration : 0.25s;
+$default-transition-duration: 0.25s;

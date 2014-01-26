@@ -1,0 +1,30 @@
+<a class="top" href="#">Top <i class="icon-angle-up"></i></a>
+
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script src="/js/headroom.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+    var headroomHeader = new Headroom(document.querySelector("header"), {
+        "tolerance": 30,
+        "offset": 80,
+        "classes": {
+            "initial": "animated",
+            "pinned": "bounceInDown",
+            "unpinned": "bounceOutUp"
+        }
+    });
+    headroomHeader.init();
+
+    var headroomTop = new Headroom(document.querySelector("a.top"), {
+        "tolerance": 30,
+        "offset": 80,
+        "classes": {
+            "initial": "animated",
+            "pinned": "bounceInUp",
+            "unpinned": "bounceOutDown"
+        }
+    });
+    headroomTop.init();
+</script>
+</body>
+</html>

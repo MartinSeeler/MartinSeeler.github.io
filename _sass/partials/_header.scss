@@ -1,48 +1,47 @@
 body > header {
 
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 
-    border-bottom: 1px solid $quieter-color;
-    background-color: #FFF;
-    // margin-bottom: 30px;
+  border-bottom: 1px solid $quieter-color;
+  background-color: #FFF;
 
-    .header-master {
-        padding: 15px 0;
+  .header-master {
+    padding: $default-space 0;
+  }
+
+  $img-size: 60px;
+
+  img.blog-logo {
+    @include float-left;
+    width: $img-size;
+    height: $img-size;
+    background-position: center center;
+    border-radius: 50%;
+  }
+
+  .blog-name {
+    @include inline-block;
+    white-space: nowrap;
+    padding: {
+      left: $default-space;
+      top: 5px;
+    }
+    line-height: 1.35em;
+
+    .blog-title a {
+      font-size: 18px;
+      font-weight: 300;
+      color: #000;
+      text-decoration: none;
     }
 
-
-    $img-size: 60px;
-
-    img.blog-logo {
-        @include float-left;
-        width: $img-size;
-        height: $img-size;
-        background-position: center center;
-        border-radius: 50%;
+    .blog-sub {
+      font-size: 14px;
+      color: $quiet-color;
     }
-
-    .blog-name {
-        @include inline-block;
-        white-space: nowrap;
-        padding: {
-            left: 15px;
-            top: 5px;
-        }
-        line-height: 1.35em;
-
-        .blog-title a {
-            font-size: 18px;
-            color: #000;
-            text-decoration: none;
-        }
-
-        .blog-sub {
-            font-size: 14px;
-            color: $quiet-color;
-        }
-    }
+  }
 
 }

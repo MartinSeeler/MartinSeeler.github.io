@@ -1,0 +1,59 @@
+/*
+Syntax error: File to import not found or unreadable: blueprint/reset.
+              Load path: /opt/projects/git/MartinSeeler.github.io/_sass
+        on line 10 of screen.scss
+
+5: @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+6: @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600);
+7: @import url(http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic);
+8: 
+9: // import blueprints
+10: @import "blueprint/reset";
+11: @import "blueprint/debug";
+12: @import "blueprint/typography";
+13: @import "blueprint/utilities";
+14: @import "blueprint/colors";
+15: @import "blueprint/buttons";
+
+Backtrace:
+screen.scss:10
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/import_node.rb:67:in `import'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:217:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/engine.rb:315:in `_render'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/engine.rb:262:in `render'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/plugin/compiler.rb:362:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/plugin.rb:81:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/exec.rb:443:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/exec.rb:326:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.2.13/bin/scss:13
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: blueprint/reset.\A               Load path: /opt/projects/git/MartinSeeler.github.io/_sass\A         on line 10 of screen.scss\A \A 5: @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);\A 6: @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600);\A 7: @import url(http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic);\A 8: \A 9: // import blueprints\A 10: @import \"blueprint/reset\";\A 11: @import \"blueprint/debug\";\A 12: @import \"blueprint/typography\";\A 13: @import \"blueprint/utilities\";\A 14: @import \"blueprint/colors\";\A 15: @import \"blueprint/buttons\";"; }
