@@ -6,7 +6,7 @@
   font-size: $font-size;
   color: $font-color;
 
-  line-height: 30px;
+  line-height: 1.9;
 
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: $headline-font-size;
   line-height: $headline-font-size * $headline-ratio;
+  margin-bottom: -12px;
 }
 
 h2 {
@@ -37,7 +38,6 @@ p {
 
 time {
   color: darken($quieter-color, 5%);
-  margin-top: -$default-space;
   i {
     padding-left: 2px;
     padding-right: 8px;
