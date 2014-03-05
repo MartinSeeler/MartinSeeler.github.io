@@ -1,4 +1,23 @@
 body > footer {
+
+    border-top: 1px solid $quieter-color;
+    padding: $default-space;
+
+    p, a, i { 
+        font-size: 14px;
+    }
+
+    i.icon {
+        color: $color-primary;
+        padding: 0 3px;
+    }
+
+    p, a {
+        @include inline-block;
+        font-weight: 300;
+        padding-bottom: 5px;
+    }
+
 /*
     border-top: 1px solid $quieter-color;
     padding: $blueprint-font-size * 2 0;
