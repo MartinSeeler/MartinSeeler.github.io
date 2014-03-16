@@ -27,6 +27,7 @@ $color-primary-dark: darken($color-primary, 10%);
 
 $font-color: #202020;
 $font-color-light: #444;
+$font-color-lighter: lighten($font-color-light, 10%);
 $quiet-color: #b0b0b0;
 $quieter-color: #E9E9E9;
 $quietest-color: #F6F6F6;

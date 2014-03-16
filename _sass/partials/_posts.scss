@@ -16,16 +16,43 @@ ul.post-list {
 
 ul.tags {
   @include inline-block-list;
-  color: $font-color-light;
   padding: $default-space 0;
   margin-bottom: $default-space;
+
+  li.tag {
+    color: $font-color-light;
+
+    &:HOVER {
+      @include transition-property(background-color, border-color, color);
+      @include transition-duration(0.25s);
+    }
+  }
+
+  i.fa {
+    color: $font-color-lighter;
+
+    @include transition-property(color);
+    @include transition-duration(0.25s);
+  }
+
   li.tag {
     vertical-align: baseline;
     font-size: 14px;
+    
     line-height: 14px;
     border: 1px solid $quieter-color;
     padding: 4px 8px;
     margin-right: 8px;
     @include border-radius(4px);
+
+    &:HOVER {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: #FFF;
+
+      i.fa {
+        color: #FFF;
+      }
+    }
   }
 }
