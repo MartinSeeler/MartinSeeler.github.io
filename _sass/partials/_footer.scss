@@ -1,5 +1,10 @@
 body > footer {
 
+    .social-container {
+        $grid-padding: 0; // and 1em padding on the grid container
+        @include container;
+    }
+
     border-top: 1px solid $quieter-color;
     padding: $default-space;
 
@@ -7,15 +12,26 @@ body > footer {
         font-size: 14px;
     }
 
-    i.icon {
+    background-color: $color-primary;
+    color: #FFF;
+
+    a i.fa, a:VISITED i.fa {
+        color: darken($color-primary, 10%);
+
+        &:HOVER {
+            @include transition-property(color);
+            @include transition-duration(0.25s);
+            color: #FFF;
+        }
+    }
+
+    a i.fa-inverse, a:VISITED i.fa-inverse {
         color: $color-primary;
-        padding: 0 3px;
     }
 
     p, a {
         @include inline-block;
         font-weight: 300;
-        padding-bottom: 5px;
     }
 
 /*
