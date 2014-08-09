@@ -1,5 +1,12 @@
-name: Martin Seeler
-subname: About Java and beyond
-markdown: redcarpet
-pygments: true
-excerpt_separator: <!--more-->
+# Site settings
+title: Martin Seeler
+email: your-email@domain.com
+description: "About Java and beyond"
+baseurl: ""
+url: "http://martinseeler.github.io"
+twitter_username: Chasmo90
+github_username:  MartinSeeler
+
+# Build settings
+markdown: kramdown
+permalink: pretty
