@@ -6,7 +6,12 @@ baseurl: ""
 url: "http://martinseeler.github.io"
 twitter_username: Chasmo90
 github_username:  MartinSeeler
+timezone: "Europe/Berlin"
+lsi: true
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+safe: true
+
+
