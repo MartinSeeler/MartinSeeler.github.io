@@ -1,7 +1,10 @@
-# Jekyll and SASS
+# Jekyll
 _site/
+
+# NPM and webdev stuff
 .sass-cache/
 *.swp
+node_modules/
 
 # IntelliJ
 *.iml
