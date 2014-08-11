@@ -13,7 +13,7 @@ tags: java scala graphdb architecture junit lambdas shell load-balancing rx redi
 - [Quickly navigate your filesystem from the command-line](http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html)
 - [Top 10 Very Very VERY Important Topics to Discuss](http://blog.jooq.org/2014/07/25/top-10-very-very-very-important-topics-to-discuss/)
 - [Out in the Open: The Abandoned Facebook Tech That Now Helps Power Apple](http://www.wired.com/2014/08/datastax/)
-- [Graph databases in computational bioloby: case of neo4j and TitanDB](http://de.slideshare.net/andreikucharavy/graph-databases-in-biology-case-of/44)
+- [Graph databases in computational biology: case of neo4j and TitanDB](http://de.slideshare.net/andreikucharavy/graph-databases-in-biology-case-of)
 
 ### Java
 - [Why Couchbase chose RxJava for the new Java SDK](http://blog.couchbase.com/why-couchbase-chose-rxjava-new-java-sdk)
