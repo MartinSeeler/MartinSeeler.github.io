@@ -3,7 +3,7 @@ layout: post
 title:  "My Top Reads Of Week 33"
 date:   2014-08-17 20:00:00
 category: readlist
-tags: java memory media-queries css distributed-systems ui ux netflix clojure go docker hashing lambdas netty javascript jQuery tools practices refactoring backlog memory scala performance guava vertx
+tags: java memory media-queries css distributed-systems ui ux netflix clojure go docker hashing lambdas netty javascript jQuery tools practices refactoring backlog memory scala performance guava vertx machine-learning email
 ---
 
 ### General
@@ -25,10 +25,10 @@ tags: java memory media-queries css distributed-systems ui ux netflix clojure go
 - [High Performance Reactive Applications with Vert.x](http://www.infoq.com/presentations/performance-reactive-vertx)
 
 ### Github Projects
-- [Lambda Behave](https://github.com/RichardWarburton/lambda-behave)
-- [Shepherd](https://github.com/HubSpot/shepherd)
-- [Netty VBuf](https://github.com/knutwalker/netty-vbuf)
-- [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
-- [jquery.smoothState.js](https://github.com/miguel-perez/jquery.smoothState.js)
-- []()
-- []()
+- [Lambda Behave - A modern testing and behavioural specification framework for Java 8](https://github.com/RichardWarburton/lambda-behave)
+- [Shepherd - Guide your users through a tour of your app](https://github.com/HubSpot/shepherd)
+- [Netty VBuf - Variable length encoding ByteBuf implementation](https://github.com/knutwalker/netty-vbuf)
+- [Bespoke.js - DIY Presentation Micro-Framework](https://github.com/markdalgleish/bespoke.js)
+- [jquery.smoothState.js - A jQuery plugin to stop the jank of page loads](https://github.com/miguel-perez/jquery.smoothState.js)
+- [QuickML - A fast and easy to use decision tree learner in java](https://github.com/sanity/quickml)
+- [PossibleEmail - Find Someone's Email Address](https://github.com/the4dpatrick/possible-email)

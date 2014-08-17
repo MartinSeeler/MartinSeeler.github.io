@@ -24,7 +24,7 @@ tags: java scala graphdb architecture junit lambdas shell load-balancing rx redi
 - [Clean JUnit Throwable-Tests with Java 8 Lambdas](http://www.codeaffine.com/2014/07/28/clean-junit-throwable-tests-with-java-8-lambdas/)
 - [The 10 Most Annoying Things Coming Back to Java After Some Days of Scala](http://blog.jooq.org/2014/08/01/the-10-most-annoying-things-coming-back-to-java-after-some-days-of-scala/)
 
-### Github Libraries
+### Github Projects
 - [rx-redis - Reactive Redis client on top of RxJava on Netty](https://github.com/knutwalker/rx-redis)
 - [pun - A small library to enable pattern matching in javascript and coffeescript](https://github.com/CRogers/pun)
 - [HTML5 mockups of popular devices, to showcase your portfolio and spice up your website.](https://github.com/pixelsign/html5-device-mockups)
