@@ -1,0 +1,12 @@
+{
+  "name": "MartinSeeler.github.io",
+  "version": "0.1.0",
+  "homepage": "http://martinseeler.github.io",
+  "authors": [
+    "Martin Seeler <developer@chasmo.de>"
+  ],
+  "description": "My private blog and homepage",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true
+}
