@@ -8,5 +8,8 @@
   "description": "My private blog and homepage",
   "main": "index.js",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0+1"
+  }
 }

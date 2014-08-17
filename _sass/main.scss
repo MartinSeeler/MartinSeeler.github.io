@@ -1,0 +1,14 @@
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-embed";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
