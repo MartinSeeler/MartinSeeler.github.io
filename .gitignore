@@ -1,39 +1,19 @@
-# Jekyll
 _site/
-
-# NPM and webdev stuff
 .sass-cache/
 *.swp
 node_modules/
-
-# IntelliJ
 *.iml
 *.ipr
 *.iws
 .idea/
-
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Icon must ends with two \r.
 Icon
-
-
-# Thumbnails
 ._*
-
-# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-# Sublime
-# workspace files are user-specific
 *.sublime-workspace
-
-# project files should be checked into the repository, unless a significant
-# proportion of contributors will probably not be using SublimeText
 *.sublime-project
-
-# sftp configuration file
 sftp-config.json
+bower_components
