@@ -3,7 +3,7 @@ layout: post
 title:  "My Top Reads Of Week 32"
 date:   2014-08-10 20:00:00
 category: readlist
-tags: java scala graphdb architecture junit lambdas shell load-balancing rx redis netty javascript coffeescript html5 couchbase email templates
+tags: java scala graphdb database architecture junit lambdas shell load-balancing rx redis netty javascript coffeescript html5 couchbase email templates
 ---
 
 ### General
