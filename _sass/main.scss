@@ -1,14 +1,21 @@
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-embed";
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,900italic,900,700italic,700);
+@import "variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/bootstrap";
 
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+html {
+    font-weight: 300;
+}
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+nav { 
+    & p, & h1 {
+        color: rgba(255,255,255,0.87);
+    }
+}
+
+.navbar {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+footer {
+    color: rgba(0,0,0,0.54);
 }
