@@ -26,10 +26,12 @@
   },
   "homepage": "https://github.com/MartinSeeler/MartinSeeler.github.io",
   "devDependencies": {
+    "browser-sync": "^1.3.6",
     "coffee-script": "^1.7.1",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "0.0.8",
-    "gulp-sass": "^0.7.2",
-    "browser-sync": "^1.3.6"
+    "gulp-bower-src": "^0.1.0",
+    "gulp-concat": "^2.3.4",
+    "gulp-sass": "^0.7.2"
   }
 }

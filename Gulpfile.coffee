@@ -3,7 +3,10 @@ browserSync = require("browser-sync")
 sass = require("gulp-sass")
 prefix = require("gulp-autoprefixer")
 cp = require("child_process")
+concat = require("gulp-concat")
 messages = jekyllBuild: "<span style=\"color: grey\">Running:</span> $ jekyll build"
+bowerSrc = require("gulp-bower-src")
+
 
 ### build jekyll ###
 gulp.task "jekyll-build", (done) ->
@@ -45,6 +48,17 @@ gulp.task "sass", ->
   return
 
 
+### copy bower resources to lib ###
+gulp.task "bower", ->
+  bowerSrc().pipe gulp.dest("libs")
+  return
+
+
+### copy vendor js scripts from bower ###
+gulp.task "vendor", ->
+  gulp.src("bower_components/jquery/dist/*", "bower_components/bootstrap-sass-official/assets/javascripts/*").pipe gulp.dest("js/vendors")
+
+
 ### watch everything and rebuild + sync ###
 gulp.task "watch", ->
   gulp.watch "_sass/*.scss", ["sass"]
@@ -62,6 +76,7 @@ gulp.task "watch", ->
 
 ### default task when running just `gulp` ###
 gulp.task "default", [
+  "bower"  
   "browser-sync"
   "watch"
 ]

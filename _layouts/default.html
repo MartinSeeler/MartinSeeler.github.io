@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body>
+    <main id="main" class="m-scene">
+        {% include header.html %}
 
-    {% include header.html %}
+        <div class="container scene_element scene_element--fadeinright">
+            {{ content }}
+        </div>
 
-    <div class="container">
-      {{ content }}
-    </div>
+        {% include footer.html %}
 
-    {% include footer.html %}
+    </main>
+    <script type="text/javascript" src="/libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/libs/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="/libs/smoothstate/jquery.smoothState.js"></script>
+    <script type="text/javascript">
+    ;
+    (function($) {
+        'use strict';
+        var $body = $('html, body'),
+            content = $('#main').smoothState({
+                // Runs when a link has been activated
+                onStart: {
+                    duration: 250, // Duration of our animation
+                    render: function(url, $container) {
+                        // toggleAnimationClass() is a public method
+                        // for restarting css animations with a class
+                        content.toggleAnimationClass('is-exiting');
+                        // Scroll user to the top
+                        $body.animate({
+                            scrollTop: 0
+                        });
+                    }
+                }
+            }).data('smoothState');
+        //.data('smoothState') makes public methods available
+    })(jQuery);
+    </script>
+</body>
 
-    </body>
 </html>

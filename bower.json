@@ -10,6 +10,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0+1"
+    "bootstrap-sass-official": "~3.2.0+1",
+    "smoothstate": "~0.5.1",
+    "jquery": "~2.1.1",
+    "animate-sass": "~0.5.0",
+    "animate.css": "~3.2.0"
   }
 }
