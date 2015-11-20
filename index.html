@@ -1,16 +1,7 @@
 ---
-layout: default
+layout: blog
 title: Blog Posts
 ---
 
 
-{% for post in site.posts %}
-<article>
-    <h4>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h4>
-    <p>
-        <span class="post-date"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
-    </p>
-</article>
-{% endfor %}
+

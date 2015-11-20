@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section itemscope itemtype="http://schema.org/Blog">
+  {% for post in site.posts %}
+  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="headline">{{ post.title }}</span></a></h1>
+    <meta itemprop="keywords" content="{{ post.tags | join: ',' }}" />
+    <time itemprop="datePublished" content="{{ post.date | date: '%Y-%m-%d' }}" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+  </article>
+  {% endfor %}
+</section>

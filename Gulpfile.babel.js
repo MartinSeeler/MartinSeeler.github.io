@@ -3,6 +3,7 @@ const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const gzip = require('gulp-gzip');
+const scsslint = require('gulp-scss-lint');
 const plumber = require('gulp-plumber');
 const uncss = require('gulp-uncss');
 const prefix = require('gulp-autoprefixer');
@@ -24,9 +25,7 @@ gulp.task('jekyll-build', (done) => {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
-  browserSync.reload();
-});
+gulp.task('jekyll-rebuild', ['jekyll-build'], () => { browserSync.reload();});
 
 /**
  * Wait for jekyll-build, then launch the Server
@@ -35,10 +34,15 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], () => {
   browserSync({server: {baseDir: '_site'}});
 });
 
+gulp.task('sass:validate', () => {
+  return gulp.src('_scss/**/*.scss')
+      .pipe(scsslint({config: '.scss-style.yml'}))
+});
+
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
-gulp.task('sass', () => {
+gulp.task('sass', ['sass:validate'], () => {
   return gulp.src('_scss/main.scss')
       .pipe(plumber())
       .pipe(sourcemaps.init())
@@ -60,7 +64,7 @@ gulp.task('sass', () => {
  */
 gulp.task('watch', () => {
   gulp.watch('_scss/**/*.scss', ['sass']);
-  gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
