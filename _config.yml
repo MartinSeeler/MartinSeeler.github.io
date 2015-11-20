@@ -11,7 +11,7 @@ lsi: true
 
 # Build settings
 markdown: kramdown
-permalink: "/:year/:month/:day/:title/"
+permalink: "/:categories/:title.html"
 safe: true
 exclude: ["bower_components/", "node_modules/", "package.json", "bower.json", "Gulpfile.*", "LICENSE", "README.md"]
 

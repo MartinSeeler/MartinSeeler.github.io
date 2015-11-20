@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<section>
+    <header>
+        <h1>Github Repos</h1>
+    </header>
+The following is a list of awesome Github projects I liked this week.
+You should really check them out!
+
+{% for project in site.data.curations[page.curation].github %}
+<div>
+    <a href="{{ project.link }}"> {{ project.name }} </a>
+    <p>{{ project.desc }}</p>
+    <p>Languages</p>
+    <ul>
+    {% for lang in project.langs %}
+        <li>{{ lang.name }}</li>
+    {% endfor %}
+    </ul>
+    <img src="{{ project.owner.avatar }}" alt="Avatar of {{ project.owner.name }}">
+    <p>by <a href="{{ project.owner.link }}">{{ project.owner.name }} ({{ project.owner.user }})</a></p>
+</div>
+{% endfor %}
+</section>

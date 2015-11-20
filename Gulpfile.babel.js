@@ -43,7 +43,7 @@ gulp.task('sass:validate', () => {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', ['sass:validate'], () => {
-  return gulp.src('_scss/main.scss')
+  return gulp.src('_scss/**/*.scss')
       .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(sass.sync({includePaths: ['scss'], outputStyle: 'compressed'}).on('error', sass.logError))
@@ -52,9 +52,10 @@ gulp.task('sass', ['sass:validate'], () => {
         html: ['_site/**/*.html']
       }))
       .pipe(sourcemaps.write())
-      .pipe(gzip())
       .pipe(gulp.dest('_site/css'))
       .pipe(browserSync.reload({stream: true}))
+      .pipe(gulp.dest('css'))
+      .pipe(gzip())
       .pipe(gulp.dest('css'));
 });
 

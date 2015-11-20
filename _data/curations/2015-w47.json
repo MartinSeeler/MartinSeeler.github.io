@@ -1,0 +1,28 @@
+{
+  "github": [
+    {
+      "name": "batarangle",
+      "desc": "Angular 2 development tools for Chrome",
+      "link": "https://github.com/aragozin/jvm-tools",
+      "langs": [
+        {
+          "name": "HTML",
+          "count": 2825
+        },
+        {
+          "name": "JavaScript",
+          "count": 15182
+        }, {
+          "name": "TypeScript",
+          "count": 42561
+        }
+      ],
+      "owner": {
+        "user": "rangle",
+        "name": "rangle.io",
+        "avatar": "https://avatars.githubusercontent.com/u/4304982?v=3",
+        "link": "https://github.com/rangle"
+      }
+    }
+  ]
+}
