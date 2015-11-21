@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Enriqueta:400,700);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700);
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid);
+@import "bower_components/typographic/scss/typographic";
+
+$line-height-ratio: 1.75;
+$header-ratio: $golden;
+$body-font: 'Enriqueta';
+$body-font-weight: 300;
+$body-color: #666;
+$header-font: 'Londrina Solid', 'serif';
+// $header-font: 'Amatic SC', 'serif';
+$header-font-weight: 500;
+$header-color: #111;
+$min-font: 16px;
+$max-font: 24px;
+$min-width: 600px;
+$max-width: 1000px;
+$vertical-rhythm: true;
+
+@include typographic();
+//@include grid-overlay(blue, 2);

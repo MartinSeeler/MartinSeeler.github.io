@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "neutroncss": "~0.9.2"
+    "neutroncss": "~0.9.2",
+    "typographic": "~2.9.3"
   }
 }

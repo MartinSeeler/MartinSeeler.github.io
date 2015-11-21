@@ -1,8 +1,10 @@
 ---
 layout: default
+title: Blog Posts
 ---
+
 <section itemscope itemtype="http://schema.org/Blog">
-  {% for post in site.posts %}
+  {% for post in site.categories.blog %}
   <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="headline">{{ post.title }}</span></a></h1>
     <meta itemprop="keywords" content="{{ post.tags | join: ',' }}" />

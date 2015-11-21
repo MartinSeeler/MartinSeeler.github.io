@@ -1,17 +1,11 @@
 @import "bower_components/neutroncss/neutron";
 
 // Modules and Variables
-//@import "partials/base";
+//@import "modules/normalize";
+@import "partials/typography";
 
 // Partials
-@import "partials/normalize";
+@import "partials/layout";
 @import "partials/curations";
-//@import "partials/typography";
-//@import "partials/buttons";
-//@import "partials/figures";
-//@import "partials/grids";
-// ...
 
 // Third-party
-//@import "vendor/colorpicker";
-//@import "vendor/jquery.ui.core";

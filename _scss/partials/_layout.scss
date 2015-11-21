@@ -1,0 +1,14 @@
+html, body {
+  @include container-align('center');
+  @include container-width(95%);
+  @include breakpoint(from-desktop) {
+    @include container-width(80%);
+  }
+}
+
+section,
+article {
+  @include columns((1)) {
+    //background-color: #f1f1f1;
+  };
+}
