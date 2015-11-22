@@ -2,6 +2,12 @@ body {
   width: 100%;
   max-width: 100%;
 }
+
+body,
+html {
+  background-color: #FAFCFC;
+}
+
 main {
 
   @include container-width(90%);

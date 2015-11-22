@@ -48,9 +48,7 @@ gulp.task('sass', ['sass:validate'], () => {
       .pipe(sourcemaps.init())
       .pipe(sass.sync({includePaths: ['scss'], outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(prefix(['last 5 versions', '> 5%'], {cascade: true}))
-      .pipe(uncss({
-        html: ['_site/**/*.html']
-      }))
+      //.pipe(uncss({html: ['_site/**/*.html']}))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('_site/css'))
       .pipe(browserSync.reload({stream: true}))

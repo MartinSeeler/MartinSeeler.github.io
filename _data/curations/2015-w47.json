@@ -1,6 +1,15 @@
 {
   "delicious": [
     {
+      "title": "Drone Autonomously Avoiding Obstacles at 30 MPH",
+      "desc": "Self-flying drone dips, darts and dives through trees at 30 mph",
+      "tags": [
+        "ai",
+        "drone"
+      ],
+      "url": "https://www.youtube.com/watch?v=_qah8oIzCwk&feature=youtu.be"
+    },
+    {
       "title": "Functional Programming, CSS, and your sanity",
       "desc": "How to apply patterns from functional programming on CSS.",
       "tags": [
@@ -13,6 +22,93 @@
     }
   ],
   "github": [
+    {
+      "name": "functional-programming-javascript",
+      "desc": "",
+      "link": "https://github.com/busypeoples/functional-programming-javascript",
+      "langs": [],
+      "owner": {
+        "user": "busypeoples",
+        "name": null,
+        "avatar": "https://avatars.githubusercontent.com/u/718727?v=3",
+        "link": "https://github.com/busypeoples"
+      }
+    },
+    {
+      "name": "StackOverflowElectionViewer",
+      "desc": "A Visualization Tool for Stack Overflow Elections",
+      "link": "https://github.com/josilber/StackOverflowElectionViewer",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 21095
+        },
+        {
+          "name": "HTML",
+          "count": 18806
+        },
+        {
+          "name": "PHP",
+          "count": 2033
+        },
+        {
+          "name": "CSS",
+          "count": 857
+        }
+      ],
+      "owner": {
+        "user": "josilber",
+        "name": null,
+        "avatar": "https://avatars.githubusercontent.com/u/5759565?v=3",
+        "link": "https://github.com/josilber"
+      }
+    },
+    {
+      "name": "parallec",
+      "desc": "Fast Parallel Async HTTP/SSH/TCP/Ping Client Java Library. Aggregate 10,000 APIs & send anywhere in 20 lines of code.Ping/HTTP Calls 8000 servers in 12 seconds. (Akka)",
+      "link": "https://github.com/eBay/parallec",
+      "langs": [
+        {
+          "name": "Java",
+          "count": 653212
+        }
+      ],
+      "owner": {
+        "user": "eBay",
+        "name": null,
+        "avatar": "https://avatars.githubusercontent.com/u/3639281?v=3",
+        "link": "https://github.com/eBay"
+      }
+    },
+    {
+      "name": "nim-playground",
+      "desc": "A interactive website and server that allow you to easily play with and explore the Nim programming language.",
+      "link": "https://github.com/theduke/nim-playground",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 5626
+        },
+        {
+          "name": "HTML",
+          "count": 2912
+        },
+        {
+          "name": "Nimrod",
+          "count": 1717
+        },
+        {
+          "name": "CSS",
+          "count": 413
+        }
+      ],
+      "owner": {
+        "user": "theduke",
+        "name": "theduke",
+        "avatar": "https://avatars.githubusercontent.com/u/241621?v=3",
+        "link": "https://github.com/theduke"
+      }
+    },
     {
       "name": "typographic",
       "desc": "Easy SCSS or Stylus responsive typography with vertical rhythm, modular scale, font stacks, and more.",
@@ -60,6 +156,23 @@
       }
     },
     {
+      "name": "gulp-gzip",
+      "desc": "Gzip plugin for gulp.",
+      "link": "https://github.com/jstuckey/gulp-gzip",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 23042
+        }
+      ],
+      "owner": {
+        "user": "jstuckey",
+        "name": "Jeremy Stuckey",
+        "avatar": "https://avatars.githubusercontent.com/u/1579936?v=3",
+        "link": "https://github.com/jstuckey"
+      }
+    },
+    {
       "name": "dockercraft",
       "desc": "Docker + Minecraft = Dockercraft",
       "link": "https://github.com/docker/dockercraft",
@@ -97,6 +210,31 @@
       }
     },
     {
+      "name": "batarangle",
+      "desc": "Angular 2 development tools for Chrome",
+      "link": "https://github.com/rangle/batarangle",
+      "langs": [
+        {
+          "name": "TypeScript",
+          "count": 42561
+        },
+        {
+          "name": "JavaScript",
+          "count": 15182
+        },
+        {
+          "name": "HTML",
+          "count": 2825
+        }
+      ],
+      "owner": {
+        "user": "rangle",
+        "name": "rangle.io",
+        "avatar": "https://avatars.githubusercontent.com/u/4304982?v=3",
+        "link": "https://github.com/rangle"
+      }
+    },
+    {
       "name": "ui-slider",
       "desc": "jQuery UI Slider for AngularJS",
       "link": "https://github.com/angular-ui/ui-slider",
@@ -122,23 +260,6 @@
       }
     },
     {
-      "name": "gulp-gzip",
-      "desc": "Gzip plugin for gulp.",
-      "link": "https://github.com/jstuckey/gulp-gzip",
-      "langs": [
-        {
-          "name": "JavaScript",
-          "count": 23042
-        }
-      ],
-      "owner": {
-        "user": "jstuckey",
-        "name": "Jeremy Stuckey",
-        "avatar": "https://avatars.githubusercontent.com/u/1579936?v=3",
-        "link": "https://github.com/jstuckey"
-      }
-    },
-    {
       "name": "notie.js",
       "desc": "A clean and simple notification plugin (alert/growl style) for javascript, with no dependencies.",
       "link": "https://github.com/jaredreich/notie.js",
@@ -157,31 +278,6 @@
         "name": "Jared Reich",
         "avatar": "https://avatars.githubusercontent.com/u/8563847?v=3",
         "link": "https://github.com/jaredreich"
-      }
-    },
-    {
-      "name": "batarangle",
-      "desc": "Angular 2 development tools for Chrome",
-      "link": "https://github.com/rangle/batarangle",
-      "langs": [
-        {
-          "name": "TypeScript",
-          "count": 42561
-        },
-        {
-          "name": "JavaScript",
-          "count": 15182
-        },
-        {
-          "name": "HTML",
-          "count": 2825
-        }
-      ],
-      "owner": {
-        "user": "rangle",
-        "name": "rangle.io",
-        "avatar": "https://avatars.githubusercontent.com/u/4304982?v=3",
-        "link": "https://github.com/rangle"
       }
     }
   ]

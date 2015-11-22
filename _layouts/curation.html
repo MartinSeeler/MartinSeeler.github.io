@@ -9,8 +9,8 @@ layout: default
               datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %-d, %Y" }}
         </time>
     </header>
-    <section>{{ content }}</section>
-    <section>
+    <section class="dbl-line">{{ content }}</section>
+    <section class="dbl-line">
         <h2>Awesome Reads & Blog Posts</h2>
 
         <p>The following is a list of blog posts and other stuff I found interesting this week.
@@ -18,8 +18,7 @@ layout: default
 
         {% for read in site.data.curations[page.curation].delicious %}
         <section class="github-project">
-            <h3><a href="{{ read.link }}"> {{ read.title }} </a></h3>
-
+            <p><a href="{{ read.link }}"> {{ read.title }} </a></p>
             <p>{{ read.desc }}</p>
             <!--<small>by <a href="{{ project.owner.link }}">{{ project.owner.name }} ({{ project.owner.user }})</a></small>
             <footer>
