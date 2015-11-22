@@ -1,20 +1,180 @@
 {
+  "delicious": [
+    {
+      "title": "Functional Programming, CSS, and your sanity",
+      "desc": "How to apply patterns from functional programming on CSS.",
+      "tags": [
+        "css",
+        "functional-programming",
+        "haskell",
+        "clojure"
+      ],
+      "url": "http://www.jon.gold/2015/07/functional-css/"
+    }
+  ],
   "github": [
     {
-      "name": "batarangle",
-      "desc": "Angular 2 development tools for Chrome",
-      "link": "https://github.com/aragozin/jvm-tools",
+      "name": "typographic",
+      "desc": "Easy SCSS or Stylus responsive typography with vertical rhythm, modular scale, font stacks, and more.",
+      "link": "https://github.com/corysimmons/typographic",
+      "langs": [
+        {
+          "name": "CSS",
+          "count": 35676
+        },
+        {
+          "name": "JavaScript",
+          "count": 97
+        }
+      ],
+      "owner": {
+        "user": "corysimmons",
+        "name": "Cory Simmons",
+        "avatar": "https://avatars.githubusercontent.com/u/224636?v=3",
+        "link": "https://github.com/corysimmons"
+      }
+    },
+    {
+      "name": "boy",
+      "desc": "HTML5Boilerplate with older browsers in mind.",
+      "link": "https://github.com/corysimmons/boy",
       "langs": [
         {
           "name": "HTML",
-          "count": 2825
+          "count": 1435
+        },
+        {
+          "name": "CSS",
+          "count": 805
+        },
+        {
+          "name": "JavaScript",
+          "count": 131
+        }
+      ],
+      "owner": {
+        "user": "corysimmons",
+        "name": "Cory Simmons",
+        "avatar": "https://avatars.githubusercontent.com/u/224636?v=3",
+        "link": "https://github.com/corysimmons"
+      }
+    },
+    {
+      "name": "dockercraft",
+      "desc": "Docker + Minecraft = Dockercraft",
+      "link": "https://github.com/docker/dockercraft",
+      "langs": [
+        {
+          "name": "Lua",
+          "count": 1029840
+        },
+        {
+          "name": "Go",
+          "count": 149679
+        },
+        {
+          "name": "HTML",
+          "count": 73156
+        },
+        {
+          "name": "CSS",
+          "count": 24038
+        },
+        {
+          "name": "Shell",
+          "count": 1855
+        },
+        {
+          "name": "Batchfile",
+          "count": 1679
+        }
+      ],
+      "owner": {
+        "user": "docker",
+        "name": "Docker",
+        "avatar": "https://avatars.githubusercontent.com/u/5429470?v=3",
+        "link": "https://github.com/docker"
+      }
+    },
+    {
+      "name": "ui-slider",
+      "desc": "jQuery UI Slider for AngularJS",
+      "link": "https://github.com/angular-ui/ui-slider",
+      "langs": [
+        {
+          "name": "HTML",
+          "count": 10964
+        },
+        {
+          "name": "JavaScript",
+          "count": 9469
+        },
+        {
+          "name": "CSS",
+          "count": 241
+        }
+      ],
+      "owner": {
+        "user": "angular-ui",
+        "name": "AngularUI",
+        "avatar": "https://avatars.githubusercontent.com/u/1530011?v=3",
+        "link": "https://github.com/angular-ui"
+      }
+    },
+    {
+      "name": "gulp-gzip",
+      "desc": "Gzip plugin for gulp.",
+      "link": "https://github.com/jstuckey/gulp-gzip",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 23042
+        }
+      ],
+      "owner": {
+        "user": "jstuckey",
+        "name": "Jeremy Stuckey",
+        "avatar": "https://avatars.githubusercontent.com/u/1579936?v=3",
+        "link": "https://github.com/jstuckey"
+      }
+    },
+    {
+      "name": "notie.js",
+      "desc": "A clean and simple notification plugin (alert/growl style) for javascript, with no dependencies.",
+      "link": "https://github.com/jaredreich/notie.js",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 27557
+        },
+        {
+          "name": "HTML",
+          "count": 3188
+        }
+      ],
+      "owner": {
+        "user": "jaredreich",
+        "name": "Jared Reich",
+        "avatar": "https://avatars.githubusercontent.com/u/8563847?v=3",
+        "link": "https://github.com/jaredreich"
+      }
+    },
+    {
+      "name": "batarangle",
+      "desc": "Angular 2 development tools for Chrome",
+      "link": "https://github.com/rangle/batarangle",
+      "langs": [
+        {
+          "name": "TypeScript",
+          "count": 42561
         },
         {
           "name": "JavaScript",
           "count": 15182
-        }, {
-          "name": "TypeScript",
-          "count": 42561
+        },
+        {
+          "name": "HTML",
+          "count": 2825
         }
       ],
       "owner": {

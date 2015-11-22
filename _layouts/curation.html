@@ -2,27 +2,64 @@
 layout: default
 ---
 
-{{ content }}
-
-<section>
+<article>
     <header>
-        <h1>Github Repos</h1>
+        <h1>{{ page.title }}</h1>
+        <time itemprop="datePublished" content="{{ page.date | date: '%Y-%m-%d' }}"
+              datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %-d, %Y" }}
+        </time>
     </header>
-The following is a list of awesome Github projects I liked this week.
-You should really check them out!
+    <section>{{ content }}</section>
+    <section>
+        <h2>Awesome Reads & Blog Posts</h2>
 
-{% for project in site.data.curations[page.curation].github %}
-<div>
-    <a href="{{ project.link }}"> {{ project.name }} </a>
-    <p>{{ project.desc }}</p>
-    <p>Languages</p>
-    <ul>
-    {% for lang in project.langs %}
-        <li>{{ lang.name }}</li>
-    {% endfor %}
-    </ul>
-    <img src="{{ project.owner.avatar }}" alt="Avatar of {{ project.owner.name }}">
-    <p>by <a href="{{ project.owner.link }}">{{ project.owner.name }} ({{ project.owner.user }})</a></p>
-</div>
-{% endfor %}
-</section>
+        <p>The following is a list of blog posts and other stuff I found interesting this week.
+            You should really check them out!</p>
+
+        {% for read in site.data.curations[page.curation].delicious %}
+        <section class="github-project">
+            <h3><a href="{{ read.link }}"> {{ read.title }} </a></h3>
+
+            <p>{{ read.desc }}</p>
+            <!--<small>by <a href="{{ project.owner.link }}">{{ project.owner.name }} ({{ project.owner.user }})</a></small>
+            <footer>
+                <ul class="tag-bar">
+                  {% for lang in project.langs | sort: 'count' %}
+                  <li class="tag">{{ lang.name }}</li>
+                  {% endfor %}
+                </ul>
+            </footer>-->
+        </section>
+        {% endfor %}
+
+    </section>
+    <section>
+        <h2>Awesome Github Projects</h2>
+
+        <p>The following is a list of awesome Github projects I liked this week.
+            You should really check them out!</p>
+
+        {% for project in site.data.curations[page.curation].github %}
+        <section class="github-project">
+            <div class="column">
+                <img src="{{ project.owner.avatar }}" alt="Avatar of {{ project.owner.name }}">
+            </div>
+            <div class="column">
+                <h3><a href="{{ project.link }}"> {{ project.name }} </a></h3>
+
+                <p>{{ project.desc }}</p>
+                <!--<small>by <a href="{{ project.owner.link }}">{{ project.owner.name }} ({{ project.owner.user }})</a></small>
+                <footer>
+                    <ul class="tag-bar">
+                      {% for lang in project.langs | sort: 'count' %}
+                      <li class="tag">{{ lang.name }}</li>
+                      {% endfor %}
+                    </ul>
+                </footer>-->
+            </div>
+        </section>
+        {% endfor %}
+
+    </section>
+
+</article>

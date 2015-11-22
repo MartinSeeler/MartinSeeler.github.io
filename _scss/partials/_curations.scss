@@ -1,0 +1,19 @@
+.github-project {
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10%;
+  }
+
+  @include columns((1,4), $target: '.column', $margin: 10px, $flush-margin: true);
+
+  h3 {
+    margin-top: 0;
+  }
+
+}

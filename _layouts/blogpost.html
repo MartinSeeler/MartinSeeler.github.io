@@ -12,9 +12,9 @@ layout: default
         <h1 itemprop="headline">{{ page.title }}</h1>
         <time itemprop="datePublished" content="{{ page.date | date: '%Y-%m-%d' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %-d, %Y" }}</time>
     </header>
-    <main itemprop="articleBody">
+    <div itemprop="articleBody">
         {{ content }}
-    </main>
+    </div>
     <footer>
         <p>Written by <span itemprop="author">Martin Seeler</span></p>
     </footer>

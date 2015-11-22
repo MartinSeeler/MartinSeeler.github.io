@@ -1,14 +1,17 @@
-html, body {
-  @include container-align('center');
-  @include container-width(95%);
-  @include breakpoint(from-desktop) {
-    @include container-width(80%);
-  }
+body {
+  width: 100%;
+  max-width: 100%;
 }
+main {
 
-section,
-article {
-  @include columns((1)) {
-    //background-color: #f1f1f1;
-  };
+  @include container-width(90%);
+  @include container-align('center');
+
+  @include breakpoint(from-desktop) {
+    @include container-width(70%);
+  }
+
+  @include breakpoint(from-desktop-mid) {
+    @include container-width(50%);
+  }
 }

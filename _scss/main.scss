@@ -1,11 +1,12 @@
 @import "bower_components/neutroncss/neutron";
 
 // Modules and Variables
-//@import "modules/normalize";
+@import "modules/normalize";
 @import "partials/typography";
 
 // Partials
 @import "partials/layout";
 @import "partials/curations";
+@import "partials/tags";
 
 // Third-party
