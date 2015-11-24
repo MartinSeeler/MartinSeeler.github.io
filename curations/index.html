@@ -4,6 +4,9 @@ title: Curations
 ---
 
 <section itemscope itemtype="http://schema.org/Blog">
+  <header>
+    <h1>Curations</h1>
+  </header>
   {% for post in site.categories.curations %}
   <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="headline">{{ post.title }}</span></a></h1>

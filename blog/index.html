@@ -4,6 +4,11 @@ title: Blog Posts
 ---
 
 <section itemscope itemtype="http://schema.org/Blog">
+  <header>
+    <header>
+      <h1 itemprop="headline">{{ page.title }}</h1>
+    </header>
+  </header>
   {% for post in site.categories.blog %}
   <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span itemprop="headline">{{ post.title }}</span></a></h1>
