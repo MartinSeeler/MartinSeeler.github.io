@@ -7,10 +7,12 @@ url: "http://martinseeler.github.io"
 twitter_username: Chasmo90
 github_username:  MartinSeeler
 timezone: "Europe/Berlin"
-lsi: true
+lsi: false
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 permalink: "/:categories/:title.html"
 safe: true
 exclude: ["bower_components/", "node_modules/", "package.json", "bower.json", "Gulpfile.*", "LICENSE", "README.md"]
