@@ -1,0 +1,541 @@
+{
+  "delicious": [
+    {
+      "title": "Autonomous Drifting using Machine Learning",
+      "desc": "Teach a car to drift like Ken Block with this framework for reinforcement learning.",
+      "tags": [
+        "machinelearning",
+        "reinforcement-learning",
+        "ai"
+      ],
+      "url": "https://www.youtube.com/watch?v=opsmd5yuBF0&feature=youtu.be"
+    },
+    {
+      "title": "Netflix Culture - Freedom & Responsibility",
+      "desc": "One of the best company cultures in the tech industry out there.",
+      "tags": [
+        "company-culture",
+        "netflix",
+        "values"
+      ],
+      "url": "http://de.slideshare.net/reed2001/culture-1798664"
+    },
+    {
+      "title": "Docker Overlay Networks: That was Easy",
+      "desc": "Jeff Nickoloff about multi host networking in docker.",
+      "tags": [
+        "docker",
+        "network",
+        "service-discovery"
+      ],
+      "url": "https://medium.com/on-docker/docker-overlay-networks-that-was-easy-8f24baebb698#.lx1tnyvza"
+    },
+    {
+      "title": "Shouting in the Datacenter",
+      "desc": "Brendan Gregg from Sun's Fishworks team makes an interesting discovery about inducing disk latency.",
+      "tags": [
+        "dev-ops"
+      ],
+      "url": "https://www.youtube.com/watch?v=tDacjrSCeq4"
+    },
+    {
+      "title": "Webpack Compared",
+      "desc": "WebPack compared to the major frontend tools like grunt, gulp and browserify.",
+      "tags": [
+        "webpack",
+        "grunt",
+        "gulp",
+        "npm",
+        "amd",
+        "browserify",
+        "jspm",
+        "commonjs",
+        "es6"
+      ],
+      "url": "http://survivejs.com/webpack_react/webpack_compared/"
+    }
+  ],
+  "github": [
+    {
+      "name": "clojure-type-selection-flowchart",
+      "desc": "Flowchart for choosing the right Clojure type definition form",
+      "link": "https://github.com/cemerick/clojure-type-selection-flowchart",
+      "langs": [],
+      "owner": {
+        "user": "cemerick",
+        "name": "Chas Emerick",
+        "avatar": "https://avatars.githubusercontent.com/u/47489?v=3",
+        "link": "https://github.com/cemerick"
+      }
+    },
+    {
+      "name": "debug-http",
+      "desc": "Debug HTTP/HTTPS requests in Node.js",
+      "link": "https://github.com/floatdrop/debug-http",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 1640
+        }
+      ],
+      "owner": {
+        "user": "floatdrop",
+        "name": "Vsevolod Strukchinsky",
+        "avatar": "https://avatars.githubusercontent.com/u/365089?v=3",
+        "link": "https://github.com/floatdrop"
+      }
+    },
+    {
+      "name": "iterm2-material-colors",
+      "desc": "A theme / color scheme for iTerm2 based on Google's Material Design Color Palette",
+      "link": "https://github.com/MartinSeeler/iterm2-material-colors",
+      "langs": [],
+      "owner": {
+        "user": "MartinSeeler",
+        "name": "Martin Seeler",
+        "avatar": "https://avatars.githubusercontent.com/u/1043838?v=3",
+        "link": "https://github.com/MartinSeeler"
+      }
+    },
+    {
+      "name": "TradingSimulation",
+      "desc": "",
+      "link": "https://github.com/kebetsi/TradingSimulation",
+      "langs": [
+        {
+          "name": "Scala",
+          "count": 136856
+        },
+        {
+          "name": "C",
+          "count": 7953
+        },
+        {
+          "name": "Python",
+          "count": 4327
+        }
+      ],
+      "owner": {
+        "user": "kebetsi",
+        "name": "Ilia Kebets",
+        "avatar": "https://avatars.githubusercontent.com/u/2404014?v=3",
+        "link": "https://github.com/kebetsi"
+      }
+    },
+    {
+      "name": "ahab",
+      "desc": "Docker event handling with Python",
+      "link": "https://github.com/instacart/ahab",
+      "langs": [
+        {
+          "name": "Python",
+          "count": 7478
+        }
+      ],
+      "owner": {
+        "user": "instacart",
+        "name": "Instacart",
+        "avatar": "https://avatars.githubusercontent.com/u/3732412?v=3",
+        "link": "https://github.com/instacart"
+      }
+    },
+    {
+      "name": "iteratee",
+      "desc": "Iteratees for cats",
+      "link": "https://github.com/travisbrown/iteratee",
+      "langs": [
+        {
+          "name": "Scala",
+          "count": 88833
+        }
+      ],
+      "owner": {
+        "user": "travisbrown",
+        "name": "Travis Brown",
+        "avatar": "https://avatars.githubusercontent.com/u/316049?v=3",
+        "link": "https://github.com/travisbrown"
+      }
+    },
+    {
+      "name": "nouislider-angular",
+      "desc": "angular wrapper for nouislider",
+      "link": "https://github.com/Yankovsky/nouislider-angular",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 5257
+        }
+      ],
+      "owner": {
+        "user": "Yankovsky",
+        "name": "Yankovsky Andrey",
+        "avatar": "https://avatars.githubusercontent.com/u/72094?v=3",
+        "link": "https://github.com/Yankovsky"
+      }
+    },
+    {
+      "name": "jump.js",
+      "desc": "A small, modern, dependency-free smooth scrolling library.",
+      "link": "https://github.com/callmecavs/jump.js",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 3353
+        }
+      ],
+      "owner": {
+        "user": "callmecavs",
+        "name": "Michael Cavalea",
+        "avatar": "https://avatars.githubusercontent.com/u/2293641?v=3",
+        "link": "https://github.com/callmecavs"
+      }
+    },
+    {
+      "name": "updtr",
+      "desc": "Update outdated npm modules with zero pain™",
+      "link": "https://github.com/peerigon/updtr",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 23048
+        }
+      ],
+      "owner": {
+        "user": "peerigon",
+        "name": "peerigon",
+        "avatar": "https://avatars.githubusercontent.com/u/1265133?v=3",
+        "link": "https://github.com/peerigon"
+      }
+    },
+    {
+      "name": "alias-tips",
+      "desc": "An oh-my-zsh plugin to help remembering those aliases you defined once",
+      "link": "https://github.com/djui/alias-tips",
+      "langs": [
+        {
+          "name": "Python",
+          "count": 7905
+        },
+        {
+          "name": "Shell",
+          "count": 329
+        }
+      ],
+      "owner": {
+        "user": "djui",
+        "name": "Uwe Dauernheim",
+        "avatar": "https://avatars.githubusercontent.com/u/99752?v=3",
+        "link": "https://github.com/djui"
+      }
+    },
+    {
+      "name": "flexboxfroggy",
+      "desc": "A game for learning CSS flexbox",
+      "link": "https://github.com/thomaspark/flexboxfroggy",
+      "langs": [
+        {
+          "name": "HTML",
+          "count": 21806
+        },
+        {
+          "name": "JavaScript",
+          "count": 10082
+        },
+        {
+          "name": "CSS",
+          "count": 6052
+        }
+      ],
+      "owner": {
+        "user": "thomaspark",
+        "name": "Thomas Park",
+        "avatar": "https://avatars.githubusercontent.com/u/900407?v=3",
+        "link": "https://github.com/thomaspark"
+      }
+    },
+    {
+      "name": "drip",
+      "desc": "Fast JVM launching without the hassle of persistent JVMs.",
+      "link": "https://github.com/flatland/drip",
+      "langs": [],
+      "owner": {
+        "user": "flatland",
+        "name": null,
+        "avatar": "https://avatars.githubusercontent.com/u/841107?v=3",
+        "link": "https://github.com/flatland"
+      }
+    },
+    {
+      "name": "activate-power-mode",
+      "desc": "Atom package - Activate POWER MODE to write your code in style.",
+      "link": "https://github.com/JoelBesada/activate-power-mode",
+      "langs": [
+        {
+          "name": "CoffeeScript",
+          "count": 7633
+        },
+        {
+          "name": "CSS",
+          "count": 379
+        }
+      ],
+      "owner": {
+        "user": "JoelBesada",
+        "name": "Joel Besada",
+        "avatar": "https://avatars.githubusercontent.com/u/688415?v=3",
+        "link": "https://github.com/JoelBesada"
+      }
+    },
+    {
+      "name": "zsh-navigation-tools",
+      "desc": "Curses-based tools for ZSH",
+      "link": "https://github.com/psprint/zsh-navigation-tools",
+      "langs": [
+        {
+          "name": "Shell",
+          "count": 36746
+        }
+      ],
+      "owner": {
+        "user": "psprint",
+        "name": null,
+        "avatar": "https://avatars.githubusercontent.com/u/6049288?v=3",
+        "link": "https://github.com/psprint"
+      }
+    },
+    {
+      "name": "tsd",
+      "desc": "TypeScript Definition manager for DefinitelyTyped",
+      "link": "https://github.com/DefinitelyTyped/tsd",
+      "langs": [
+        {
+          "name": "TypeScript",
+          "count": 436868
+        },
+        {
+          "name": "HTML",
+          "count": 140109
+        },
+        {
+          "name": "JavaScript",
+          "count": 17266
+        }
+      ],
+      "owner": {
+        "user": "DefinitelyTyped",
+        "name": "DefinitelyTyped",
+        "avatar": "https://avatars.githubusercontent.com/u/3637556?v=3",
+        "link": "https://github.com/DefinitelyTyped"
+      }
+    },
+    {
+      "name": "lazy.js",
+      "desc": "Like Underscore, but lazier",
+      "link": "https://github.com/dtao/lazy.js",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 362264
+        },
+        {
+          "name": "HTML",
+          "count": 27889
+        },
+        {
+          "name": "CSS",
+          "count": 21638
+        },
+        {
+          "name": "Ruby",
+          "count": 4274
+        }
+      ],
+      "owner": {
+        "user": "dtao",
+        "name": "Dan Tao",
+        "avatar": "https://avatars.githubusercontent.com/u/409328?v=3",
+        "link": "https://github.com/dtao"
+      }
+    },
+    {
+      "name": "frisby",
+      "desc": "Frisby is a REST API testing framework built on node.js and Jasmine that makes testing API endpoints easy, fast, and fun.",
+      "link": "https://github.com/vlucas/frisby",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 96586
+        }
+      ],
+      "owner": {
+        "user": "vlucas",
+        "name": "Vance Lucas",
+        "avatar": "https://avatars.githubusercontent.com/u/187?v=3",
+        "link": "https://github.com/vlucas"
+      }
+    },
+    {
+      "name": "lodash-fp",
+      "desc": "lodash with more functional fun.",
+      "link": "https://github.com/lodash/lodash-fp",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 627047
+        }
+      ],
+      "owner": {
+        "user": "lodash",
+        "name": "lodash JavaScript Library",
+        "avatar": "https://avatars.githubusercontent.com/u/2565403?v=3",
+        "link": "https://github.com/lodash"
+      }
+    },
+    {
+      "name": "forkability",
+      "desc": ":fork_and_knife: A linter for your repository.",
+      "link": "https://github.com/basicallydan/forkability",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 13030779
+        },
+        {
+          "name": "CSS",
+          "count": 113589
+        },
+        {
+          "name": "HTML",
+          "count": 31360
+        },
+        {
+          "name": "Makefile",
+          "count": 507
+        }
+      ],
+      "owner": {
+        "user": "basicallydan",
+        "name": "Daniel Hough",
+        "avatar": "https://avatars.githubusercontent.com/u/516325?v=3",
+        "link": "https://github.com/basicallydan"
+      }
+    },
+    {
+      "name": "cssstats",
+      "desc": "Webapp to visualize various stats about your css",
+      "link": "https://github.com/cssstats/cssstats",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 16002
+        },
+        {
+          "name": "HTML",
+          "count": 10396
+        },
+        {
+          "name": "CSS",
+          "count": 8833
+        }
+      ],
+      "owner": {
+        "user": "cssstats",
+        "name": "CSS Stats",
+        "avatar": "https://avatars.githubusercontent.com/u/11130808?v=3",
+        "link": "https://github.com/cssstats"
+      }
+    },
+    {
+      "name": "angular2-rxjs-chat",
+      "desc": "Example Chat Application using RxJS and Angular 2",
+      "link": "https://github.com/ng-book/angular2-rxjs-chat",
+      "langs": [
+        {
+          "name": "TypeScript",
+          "count": 29345
+        },
+        {
+          "name": "JavaScript",
+          "count": 8799
+        },
+        {
+          "name": "CSS",
+          "count": 4794
+        },
+        {
+          "name": "HTML",
+          "count": 1017
+        },
+        {
+          "name": "Makefile",
+          "count": 151
+        }
+      ],
+      "owner": {
+        "user": "ng-book",
+        "name": "ng-book",
+        "avatar": "https://avatars.githubusercontent.com/u/13290168?v=3",
+        "link": "https://github.com/ng-book"
+      }
+    },
+    {
+      "name": "vim-scala",
+      "desc": "My work on integration of Scala into Vim - not a ton here, but useful for me.",
+      "link": "https://github.com/derekwyatt/vim-scala",
+      "langs": [
+        {
+          "name": "VimL",
+          "count": 42524
+        },
+        {
+          "name": "Scala",
+          "count": 12567
+        },
+        {
+          "name": "Ruby",
+          "count": 1752
+        }
+      ],
+      "owner": {
+        "user": "derekwyatt",
+        "name": "Derek Wyatt",
+        "avatar": "https://avatars.githubusercontent.com/u/62324?v=3",
+        "link": "https://github.com/derekwyatt"
+      }
+    },
+    {
+      "name": "typed-talk",
+      "desc": null,
+      "link": "https://github.com/knutwalker/typed-talk",
+      "langs": [
+        {
+          "name": "Scala",
+          "count": 734
+        }
+      ],
+      "owner": {
+        "user": "knutwalker",
+        "name": "Paul Horn",
+        "avatar": "https://avatars.githubusercontent.com/u/633183?v=3",
+        "link": "https://github.com/knutwalker"
+      }
+    },
+    {
+      "name": "floatingsearchview",
+      "desc": "A search view that implements a floating search bar also known as persistent search",
+      "link": "https://github.com/arimorty/floatingsearchview",
+      "langs": [
+        {
+          "name": "Java",
+          "count": 101729
+        }
+      ],
+      "owner": {
+        "user": "arimorty",
+        "name": "Ari",
+        "avatar": "https://avatars.githubusercontent.com/u/10280820?v=3",
+        "link": "https://github.com/arimorty"
+      }
+    }
+  ]
+}
