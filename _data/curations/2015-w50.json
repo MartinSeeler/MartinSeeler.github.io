@@ -1,0 +1,341 @@
+{
+  "delicious": [
+    {
+      "title": "CSS minification benchmark results",
+      "desc": "Big overview of css minimizer",
+      "tags": [
+        "benchmark",
+        "css",
+        "minify",
+        "optimization"
+      ],
+      "url": "http://goalsmashers.github.io/css-minification-benchmark/"
+    }
+  ],
+  "github": [
+    {
+      "name": "q",
+      "desc": "q - Run SQL directly on CSV or TSV files  ",
+      "link": "https://github.com/harelba/q",
+      "langs": [
+        {
+          "name": "Python",
+          "count": 150014
+        },
+        {
+          "name": "NSIS",
+          "count": 15777
+        },
+        {
+          "name": "Shell",
+          "count": 1954
+        },
+        {
+          "name": "Batchfile",
+          "count": 141
+        }
+      ],
+      "owner": {
+        "user": "harelba",
+        "name": "Harel Ben-Attia",
+        "avatar": "https://avatars.githubusercontent.com/u/985765?v=3",
+        "link": "https://github.com/harelba"
+      }
+    },
+    {
+      "name": "angular-slick",
+      "desc": "Angular directive for slick-carousel",
+      "link": "https://github.com/vasyabigi/angular-slick",
+      "langs": [
+        {
+          "name": "ApacheConf",
+          "count": 24139
+        },
+        {
+          "name": "JavaScript",
+          "count": 15080
+        },
+        {
+          "name": "HTML",
+          "count": 8597
+        },
+        {
+          "name": "CSS",
+          "count": 6095
+        },
+        {
+          "name": "CoffeeScript",
+          "count": 5469
+        }
+      ],
+      "owner": {
+        "user": "vasyabigi",
+        "name": "Vasyl Stanislavchuk",
+        "avatar": "https://avatars.githubusercontent.com/u/681519?v=3",
+        "link": "https://github.com/vasyabigi"
+      }
+    },
+    {
+      "name": "angular-ya-treeview",
+      "desc": "Yet Another Treeview for AngularJS",
+      "link": "https://github.com/ca77y/angular-ya-treeview",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 44511
+        },
+        {
+          "name": "HTML",
+          "count": 2915
+        },
+        {
+          "name": "CSS",
+          "count": 720
+        }
+      ],
+      "owner": {
+        "user": "ca77y",
+        "name": null,
+        "avatar": "https://avatars.githubusercontent.com/u/1261627?v=3",
+        "link": "https://github.com/ca77y"
+      }
+    },
+    {
+      "name": "eventuate",
+      "desc": "Distributed, highly-available and partition-tolerant event sourcing",
+      "link": "https://github.com/RBMHTechnology/eventuate",
+      "langs": [
+        {
+          "name": "Scala",
+          "count": 655022
+        },
+        {
+          "name": "CSS",
+          "count": 119972
+        },
+        {
+          "name": "Java",
+          "count": 32729
+        },
+        {
+          "name": "HTML",
+          "count": 19018
+        },
+        {
+          "name": "Protocol Buffer",
+          "count": 7726
+        },
+        {
+          "name": "Python",
+          "count": 6119
+        },
+        {
+          "name": "Shell",
+          "count": 2266
+        },
+        {
+          "name": "JavaScript",
+          "count": 1877
+        }
+      ],
+      "owner": {
+        "user": "RBMHTechnology",
+        "name": "Red Bull Media House",
+        "avatar": "https://avatars.githubusercontent.com/u/10194147?v=3",
+        "link": "https://github.com/RBMHTechnology"
+      }
+    },
+    {
+      "name": "vim-exchange",
+      "desc": "Easy text exchange operator for Vim",
+      "link": "https://github.com/tommcdo/vim-exchange",
+      "langs": [
+        {
+          "name": "VimL",
+          "count": 10155
+        }
+      ],
+      "owner": {
+        "user": "tommcdo",
+        "name": "Tom McDonald",
+        "avatar": "https://avatars.githubusercontent.com/u/1991483?v=3",
+        "link": "https://github.com/tommcdo"
+      }
+    },
+    {
+      "name": "nim-advent-of-code-2015",
+      "desc": "Advent of Code solutions in Nim",
+      "link": "https://github.com/def-/nim-advent-of-code-2015",
+      "langs": [
+        {
+          "name": "Nimrod",
+          "count": 10724
+        }
+      ],
+      "owner": {
+        "user": "def-",
+        "name": "Dennis Felsing",
+        "avatar": "https://avatars.githubusercontent.com/u/2335377?v=3",
+        "link": "https://github.com/def-"
+      }
+    },
+    {
+      "name": "bliss",
+      "desc": "Blissful JavaScript",
+      "link": "https://github.com/LeaVerou/bliss",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 84727
+        },
+        {
+          "name": "HTML",
+          "count": 59099
+        },
+        {
+          "name": "CSS",
+          "count": 12219
+        }
+      ],
+      "owner": {
+        "user": "LeaVerou",
+        "name": "Lea Verou",
+        "avatar": "https://avatars.githubusercontent.com/u/175836?v=3",
+        "link": "https://github.com/LeaVerou"
+      }
+    },
+    {
+      "name": "Neural-Network",
+      "desc": "Abstract visualization of biological neural network",
+      "link": "https://github.com/nxxcxx/Neural-Network",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 50352
+        },
+        {
+          "name": "CSS",
+          "count": 1481
+        },
+        {
+          "name": "GLSL",
+          "count": 840
+        },
+        {
+          "name": "HTML",
+          "count": 685
+        }
+      ],
+      "owner": {
+        "user": "nxxcxx",
+        "name": "Nick",
+        "avatar": "https://avatars.githubusercontent.com/u/7262292?v=3",
+        "link": "https://github.com/nxxcxx"
+      }
+    },
+    {
+      "name": "ngUpgrade",
+      "desc": "A repository describing strategies and ideas to aid upgrading from Angular 1 to Angular 2",
+      "link": "https://github.com/angular/ngUpgrade",
+      "langs": [],
+      "owner": {
+        "user": "angular",
+        "name": "Angular",
+        "avatar": "https://avatars.githubusercontent.com/u/139426?v=3",
+        "link": "https://github.com/angular"
+      }
+    },
+    {
+      "name": "pageres",
+      "desc": "Capture website screenshots",
+      "link": "https://github.com/sindresorhus/pageres",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 11178
+        },
+        {
+          "name": "HTML",
+          "count": 18
+        }
+      ],
+      "owner": {
+        "user": "sindresorhus",
+        "name": "Sindre Sorhus",
+        "avatar": "https://avatars.githubusercontent.com/u/170270?v=3",
+        "link": "https://github.com/sindresorhus"
+      }
+    },
+    {
+      "name": "essential-gulp-plugins",
+      "desc": "Living list of most useful plugins for Gulp",
+      "link": "https://github.com/Pestov/essential-gulp-plugins",
+      "langs": [],
+      "owner": {
+        "user": "Pestov",
+        "name": "Ilya Pestov",
+        "avatar": "https://avatars.githubusercontent.com/u/290724?v=3",
+        "link": "https://github.com/Pestov"
+      }
+    },
+    {
+      "name": "gulp-jscpd",
+      "desc": "Gulp plugin for the copy/paste detector jscpd",
+      "link": "https://github.com/yannickcr/gulp-jscpd",
+      "langs": [
+        {
+          "name": "JavaScript",
+          "count": 7458
+        }
+      ],
+      "owner": {
+        "user": "yannickcr",
+        "name": "Yannick Croissant",
+        "avatar": "https://avatars.githubusercontent.com/u/13209?v=3",
+        "link": "https://github.com/yannickcr"
+      }
+    },
+    {
+      "name": "metrics-scala",
+      "desc": "The scala API for Coda Hale's Metrics.",
+      "link": "https://github.com/erikvanoosten/metrics-scala",
+      "langs": [
+        {
+          "name": "Scala",
+          "count": 87492
+        },
+        {
+          "name": "Shell",
+          "count": 492
+        }
+      ],
+      "owner": {
+        "user": "erikvanoosten",
+        "name": "Erik van oosten",
+        "avatar": "https://avatars.githubusercontent.com/u/630600?v=3",
+        "link": "https://github.com/erikvanoosten"
+      }
+    },
+    {
+      "name": "akka-http-rest",
+      "desc": "Example of reactive REST service written on akka-http with slick",
+      "link": "https://github.com/ArchDev/akka-http-rest",
+      "langs": [
+        {
+          "name": "Scala",
+          "count": 18860
+        },
+        {
+          "name": "HTML",
+          "count": 600
+        }
+      ],
+      "owner": {
+        "user": "ArchDev",
+        "name": "Arthur Kushka",
+        "avatar": "https://avatars.githubusercontent.com/u/345892?v=3",
+        "link": "https://github.com/ArchDev"
+      }
+    }
+  ]
+}
