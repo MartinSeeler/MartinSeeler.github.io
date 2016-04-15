@@ -3,13 +3,16 @@ layout: default
 ---
 
 <article itemid="{{ page.url | prepend: site.baseurl | prepend: site.url }}"
-         itemscope
+         itemscope=""
          itemtype="http://schema.org/BlogPosting"
          class="post-content">
+    <meta itemprop="image" content="https://s.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=800">
     <meta itemprop="inLanguage" content="en-US"/>
+    <meta itemprop="headline" content="{{ page.title }}"/>
+    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
     <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
     <header>
-        <h1 itemprop="headline">{{ page.title }}</h1>
+        <h1 itemprop="name">{{ page.title }}</h1>
         <time itemprop="datePublished" content="{{ page.date | date: '%Y-%m-%d' }}" datetime="{{ page.date | date: '%Y-%m-%d' }}"><small>{{ page.date | date: "%b %-d, %Y" }}</small></time>
     </header>
     <div itemprop="articleBody">
