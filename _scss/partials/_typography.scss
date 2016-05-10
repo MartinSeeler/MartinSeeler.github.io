@@ -3,6 +3,15 @@
 @import url(https://fonts.googleapis.com/css?family=Fjord+One);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic);
 @import url(https://fonts.googleapis.com/css?family=Stalemate);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(https://fonts.googleapis.com/css?family=Jim+Nightshade);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
+@import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:700);
 @import "bower_components/typographic/scss/typographic";
 
 $line-height-ratio: $golden;
@@ -10,12 +19,15 @@ $header-ratio: $aug-fourth;
 $body-font: 'Crimson Text';
 $body-font-weight: 400;
 $body-color: $color-text;
-$header-font: 'Fjord One', 'serif';
-// $header-font: 'Amatic SC', 'serif';
+$header-font: 'Rokkitt', 'serif';
+//$header-font: 'Goudy Bookletter 1911', 'serif';
+//$header-font: 'Fjord One', 'serif';
+//$header-font: 'Lora', 'serif';
+// $header-font: 'Crimson Text', 'serif';
 $header-font-weight: 400;
 $header-color: $color-font-base;
-$min-font: 16px;
-$max-font: 22px;
+$min-font: 12px;
+$max-font: 20px;
 $min-width: 600px;
 $max-width: 1000px;
 $vertical-rhythm: true;
@@ -27,17 +39,10 @@ time {
   color: $color-text-hint;
 }
 
-header {
-  h1, h2, h3, h4, h5, h6 {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: calc(96 / 16 * 1rem);
-      height: 2px;
-      background-color: $color-dividers;
-    }
-  }
+article > header {
+  text-align: center;
+}
+
+code {
+  line-height: inherit;
 }
