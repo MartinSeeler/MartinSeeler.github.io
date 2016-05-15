@@ -3,3 +3,5 @@ $color-text: transparentize($color-font-base, 1 - 0.87);
 $color-text-secondary: transparentize($color-font-base, 1 - 0.54);
 $color-text-hint: transparentize($color-font-base, 1 - 0.38);
 $color-dividers: transparentize($color-font-base, 1 - 0.12);
+
+$white: transparentize(#fff, 1 - 0.87);

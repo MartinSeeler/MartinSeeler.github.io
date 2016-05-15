@@ -15,7 +15,7 @@
 @import "bower_components/typographic/scss/typographic";
 
 $line-height-ratio: $golden;
-$header-ratio: $aug-fourth;
+$header-ratio: $golden;
 $body-font: 'Crimson Text';
 $body-font-weight: 400;
 $body-color: $color-text;
@@ -26,13 +26,15 @@ $header-font: 'Rokkitt', 'serif';
 // $header-font: 'Crimson Text', 'serif';
 $header-font-weight: 400;
 $header-color: $color-font-base;
-$min-font: 12px;
+$min-font: 15px;
 $max-font: 20px;
 $min-width: 600px;
 $max-width: 1000px;
 $vertical-rhythm: true;
 
-@include typographic();
+//article {
+  @include typographic();
+//}
 //@include grid-overlay(blue, 2);
 
 time {
@@ -45,4 +47,9 @@ article > header {
 
 code {
   line-height: inherit;
+}
+
+.navbar-brand {
+  font-family: $header-font;
+  font-weight: $header-font-weight;
 }

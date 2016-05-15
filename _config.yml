@@ -10,9 +10,11 @@ timezone: "Europe/Berlin"
 lsi: false
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+markdown: kramdown
+kramdown:
+  input: GFM
+#redcarpet:
+#  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 permalink: "/:categories/:title.html"
 safe: true
 exclude: ["bower_components/", "node_modules/", "package.json", "bower.json", "Gulpfile.*", "LICENSE", "README.md"]

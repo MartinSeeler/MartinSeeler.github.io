@@ -9,6 +9,10 @@ const uncss = require('gulp-uncss');
 const prefix = require('gulp-autoprefixer');
 const cp = require('child_process');
 
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const lib    = require('bower-files')();
+
 const messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
@@ -30,7 +34,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], () => { browserSync.reload();});
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], () => {
+gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], () => {
   browserSync({server: {baseDir: '_site'}});
 });
 
@@ -55,6 +59,13 @@ gulp.task('sass', ['sass:validate'], () => {
       .pipe(gulp.dest('css'))
       .pipe(gzip())
       .pipe(gulp.dest('css'));
+});
+
+gulp.task('js', function () {
+  gulp.src(lib.ext('js').files)
+      .pipe(concat('vendor.min.js'))
+      // .pipe(uglify())
+      .pipe(gulp.dest('./js/'));
 });
 
 /**

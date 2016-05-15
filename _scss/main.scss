@@ -1,14 +1,18 @@
-@import "bower_components/neutroncss/neutron";
 
 // Modules and Variables
-@import "modules/normalize";
 @import "modules/colors";
+@import "modules/variables";
+@import "bower_components/neutroncss/neutron";
+@import "bower_components/bootstrap/scss/bootstrap";
+
 @import "partials/typography";
 
 // Partials
 @import "partials/layout";
 @import "partials/curations";
 @import "partials/tags";
+@import "partials/menu";
 @import "partials/github-corner";
 
 // Third-party
+@import "vendor/themifyicons";
