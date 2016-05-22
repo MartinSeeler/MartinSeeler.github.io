@@ -1,7 +1,7 @@
 # Site settings
 title: Martin Seeler
 email: blog@chasmo.de
-description: "About Java and beyond"
+description: "About programming and trading"
 baseurl: ""
 url: "http://martinseeler.github.io"
 twitter_username: Chasmo90
@@ -15,7 +15,7 @@ kramdown:
   input: GFM
 #redcarpet:
 #  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
-permalink: "/:categories/:title.html"
+permalink: "/:title.html"
 safe: true
 exclude: ["bower_components/", "node_modules/", "package.json", "bower.json", "Gulpfile.*", "LICENSE", "README.md"]
 

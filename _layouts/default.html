@@ -4,22 +4,18 @@
 {% include head.html %}
 
 <body itemscope itemtype="http://schema.org/WebPage" role=”main”>
-<div class="collapse" id="exCollapsingNavbar">
-    <div>
-        <div class="menu">
-            <a href="/blog">Blog</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About me</a>
-        </div>
-    </div>
-</div>
-<nav class="navbar navbar-static-top navbar-light">
-    <a class="navbar-brand" href="/">Martin Seeler</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-        &#9776;
-    </button>
-</nav>
+<header>
+    <nav>
+        <a class="logo" href="/">Martin Seeler</a>
+        <!--<ul class="nav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/curations">Curations</a></li>
+            <li><a href="/">About me</a></li>
+        </ul>-->
+    </nav>
+</header>
 <main>{{ content }}</main>
+{% include footer.html %}
 <script src="/js/vendor.min.js"></script>
 <script src="/js/app.js"></script>
 </body>

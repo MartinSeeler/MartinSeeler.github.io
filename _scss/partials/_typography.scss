@@ -1,25 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700);
-@import url(https://fonts.googleapis.com/css?family=Londrina+Solid);
-@import url(https://fonts.googleapis.com/css?family=Fjord+One);
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic);
-@import url(https://fonts.googleapis.com/css?family=Stalemate);
-@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
-@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Jacques+Francois);
-@import url(https://fonts.googleapis.com/css?family=Jim+Nightshade);
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
-@import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911);
 @import url(https://fonts.googleapis.com/css?family=Rokkitt:700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+$fa-font-path: "../fonts/font-awesome";
+@import "bower_components/font-awesome/scss/font-awesome";
 @import "bower_components/typographic/scss/typographic";
 
-$line-height-ratio: $golden;
-$header-ratio: $golden;
-$body-font: 'Crimson Text';
+$line-height-ratio: $major-seventh;
+$header-ratio: $perfect-fifth;
+$body-font: "Crimson Text";
 $body-font-weight: 400;
 $body-color: $color-text;
-$header-font: 'Rokkitt', 'serif';
+$header-font: "Rokkitt", "serif";
 //$header-font: 'Goudy Bookletter 1911', 'serif';
 //$header-font: 'Fjord One', 'serif';
 //$header-font: 'Lora', 'serif';
@@ -27,29 +19,16 @@ $header-font: 'Rokkitt', 'serif';
 $header-font-weight: 400;
 $header-color: $color-font-base;
 $min-font: 15px;
-$max-font: 20px;
+$max-font: 24px;
 $min-width: 600px;
 $max-width: 1000px;
 $vertical-rhythm: true;
 
-//article {
-  @include typographic();
-//}
-//@include grid-overlay(blue, 2);
-
-time {
-  color: $color-text-hint;
-}
-
-article > header {
-  text-align: center;
-}
-
-code {
-  line-height: inherit;
-}
+@include typographic();
 
 .navbar-brand {
   font-family: $header-font;
   font-weight: $header-font-weight;
 }
+
+

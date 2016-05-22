@@ -1,0 +1,8 @@
+a {
+  color: $primary-color;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+    transition: $golden * 0.1s all ease-in;
+  }
+}

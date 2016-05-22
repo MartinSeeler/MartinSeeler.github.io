@@ -3,16 +3,26 @@
 @import "modules/colors";
 @import "modules/variables";
 @import "bower_components/neutroncss/neutron";
-@import "bower_components/bootstrap/scss/bootstrap";
 
-@import "partials/typography";
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+body,
+html {
+  background-color: #FFF;
+  margin-bottom: 0;
+}
 
 // Partials
+@import "partials/typography";
 @import "partials/layout";
-@import "partials/curations";
-@import "partials/tags";
-@import "partials/menu";
-@import "partials/github-corner";
+@import "partials/nav";
+@import "partials/postlist";
+@import "partials/links";
+@import "partials/footer";
+@import "partials/articles";
+@import "partials/meta";
 
 // Third-party
-@import "vendor/themifyicons";

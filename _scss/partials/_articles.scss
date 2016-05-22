@@ -1,0 +1,52 @@
+article {
+
+  & > header {
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    time {
+      color: $color-text-hint;
+
+      & .fa {
+        padding-right: $golden * 5px;
+      }
+    }
+
+  }
+
+  & > main {
+
+    margin-top: $golden * 1em;
+
+    p, ol, ul, table, pre {
+      @extend .col;
+    }
+
+    p > a {
+      display: inline !important;
+      width: auto !important;
+      float: none !important;
+    }
+
+    blockquote {
+      //text-align: center;
+      background-color: $primary-color;
+      font-size: 200%;
+      color: $white;
+      & > p {
+        padding-top: 1rem * $golden;
+        padding-bottom: 1rem * $golden;
+        margin-bottom: 0;
+      }
+      margin-bottom: 1rem * $golden;
+    }
+
+    .hljs {
+      display: inline-block;
+    }
+
+  }
+
+}

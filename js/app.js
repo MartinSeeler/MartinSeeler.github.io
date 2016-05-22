@@ -10,7 +10,7 @@ $(function () {
     // backspacing speed
     backSpeed: 30,
     // time before backspacing
-    backDelay: 500,
+    backDelay: 1500,
     // loop
     loop: true,
     // false = infinite

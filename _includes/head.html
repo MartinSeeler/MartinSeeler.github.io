@@ -18,17 +18,12 @@
     <meta name="twitter:image" content="https://s.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=800">
     {% endif %}
 
-    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/tomorrow.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <!-- Custom CSS -->
-    <!--<link rel="stylesheet" href="{{ " /libs/animate.css/animate.min.css " | prepend: site.baseurl }}">-->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
     <!-- placed in head for exact time measurement in google analytics -->
     {% include ga.html %}

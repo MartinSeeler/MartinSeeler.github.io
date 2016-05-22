@@ -4,29 +4,4 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #6a76fc !default;
-//$brand-primary:             #74b1be !default;
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
-
-// options
-$enable-flex:               true;
-$enable-rounded:            false;
-$enable-transitions:        true;
-
-
-$navbar-light-color:                transparentize($color-font-base, 0.7);
-$navbar-light-hover-color:          transparentize($color-font-base, 0.4);
-$navbar-light-active-color:         $color-font-base;
-$navbar-light-disabled-color:       transparentize($color-font-base, 0.15);
-
-
-$font-family-sans-serif:     'Crimson Text', Helvetica, Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:           $font-family-sans-serif !default;
-
-$headings-font-family:       'Rokkitt', 'serif';
-$headings-font-weight:       400;
+$primary-color:             #6a76fc !default;

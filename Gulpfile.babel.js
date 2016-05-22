@@ -34,7 +34,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], () => { browserSync.reload();});
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], () => {
+gulp.task('browser-sync', ['sass', 'js', 'jekyll-build', 'fonts'], () => {
   browserSync({server: {baseDir: '_site'}});
 });
 
@@ -61,10 +61,16 @@ gulp.task('sass', ['sass:validate'], () => {
       .pipe(gulp.dest('css'));
 });
 
-gulp.task('js', function () {
+gulp.task('font-awesome', () => {
+  return gulp.src(['bower_components/font-awesome/fonts/fontawesome-webfont.*'])
+      .pipe(gulp.dest('fonts/font-awesome/'));
+});
+
+gulp.task('fonts', ['font-awesome']);
+
+gulp.task('js', () => {
   gulp.src(lib.ext('js').files)
       .pipe(concat('vendor.min.js'))
-      // .pipe(uglify())
       .pipe(gulp.dest('./js/'));
 });
 

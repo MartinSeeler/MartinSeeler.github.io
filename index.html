@@ -1,14 +1,52 @@
 ---
 layout: default
-title: Martin Seeler
+title: Code & Trade
 ---
-
-<section>
-    <header>
-        <img class="avatar" src="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=400" />
-        <h1>Hi, I'm Martin</h1>
-        <span class="title">Passionated <span class="typed"></span></span>
-    </header>
-    <!--<a href="/curations">Curations</a>-->
-    <!--<a href="/blog">Blog Posts</a>-->
+<section itemscope itemtype="http://schema.org/Blog" class="postlist">
+    <!--<header>
+        <header>
+            <h1 itemprop="headline">{{ page.title }}</h1>
+        </header>
+    </header>-->
+    {% for post in site.categories.blog %}
+    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="postlist__entry">
+        <header>
+            <h1 class="col">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <span itemprop="headline">{{ post.title }}</span>
+                </a>
+            </h1>
+            <div class="col">
+                <time itemprop="datePublished dateModified" content="{{ post.date | date: '%Y-%m-%d' }}"
+                      datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                    <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ post.date | date: "%b %-d, %Y" }}</small>
+                </time>
+            </div>
+        </header>
+        <main class="col">
+            {{ post.excerpt }}
+        </main>
+        <footer class="col">
+            <meta itemprop="mainEntityOfPage" content="{{ post.url | prepend: site.baseurl }}"/>
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=800">
+                <meta itemprop="width" content="800">
+                <meta itemprop="height" content="800">
+            </div>
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <meta itemprop="name" content="Martin Seeler"/>
+            </div>
+            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <meta itemprop="url" content="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=400">
+                    <meta itemprop="width" content="400">
+                    <meta itemprop="height" content="400">
+                </div>
+                <meta itemprop="name" content="Martin Seeler">
+            </div>
+            <meta itemprop="keywords" content="{{ post.tags | join: ',' }}"/>
+            <a class="button" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+        </footer>
+    </article>
+    {% endfor %}
 </section>

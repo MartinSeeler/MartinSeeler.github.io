@@ -1,0 +1,58 @@
+body > header {
+  border-bottom: 1px solid $color-dividers;
+}
+nav {
+
+  @include columns(1, $container-width: 80%);
+
+  a {
+    text-decoration: none;
+    color: $color-text-hint;
+  }
+
+  a.logo {
+    @extend h4;
+    margin-top: 0;
+  }
+
+  ul.nav {
+    //text-align: center;
+    //@include columns(3);
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+
+  //margin-bottom: $golden * 3em;
+
+  @include breakpoint(from-tablet) {
+
+    a.logo {
+      text-align: left;
+    }
+
+    @include columns((1, 3), $container-width: 90%, $flush-padding: true);
+
+    ul.nav {
+      text-align: right;
+      padding-top: $golden * 3px;
+      li {
+        display: inline-block;
+        &:before {
+          //content: '\000B7';
+          content: '\0007C';
+          padding-right: $golden * 5px;
+          color: $color-dividers;
+        }
+        &:first-child:before {
+          content: '';
+        }
+      }
+    }
+
+  }
+
+}
