@@ -25,10 +25,3 @@ $max-width: 1000px;
 $vertical-rhythm: true;
 
 @include typographic();
-
-.navbar-brand {
-  font-family: $header-font;
-  font-weight: $header-font-weight;
-}
-
-
