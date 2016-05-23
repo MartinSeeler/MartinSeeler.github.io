@@ -23,10 +23,10 @@ title: Code & Trade
                 </time>
             </div>
         </header>
-        <main class="col">
+        <main>
             {{ post.excerpt }}
         </main>
-        <footer class="col">
+        <footer>
             <meta itemprop="mainEntityOfPage" content="{{ post.url | prepend: site.baseurl }}"/>
             <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
                 <meta itemprop="url" content="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=800">
@@ -38,14 +38,25 @@ title: Code & Trade
             </div>
             <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                 <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                    <meta itemprop="url" content="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=400">
+                    <meta itemprop="url"
+                          content="http://www.gravatar.com/avatar/58e39d254d36d251391071682fe4dd8b?s=400">
                     <meta itemprop="width" content="400">
                     <meta itemprop="height" content="400">
                 </div>
                 <meta itemprop="name" content="Martin Seeler">
             </div>
             <meta itemprop="keywords" content="{{ post.tags | join: ',' }}"/>
-            <a class="button" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+            <div class="col">
+                <!--<div class="tags">
+                    <span>Keywords:</span>
+                    <ul class="taglist">
+                        {% for tag in post.tags %}
+                        <li class="tag">{{ tag }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>-->
+                <a class="button" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+            </div>
         </footer>
     </article>
     {% endfor %}

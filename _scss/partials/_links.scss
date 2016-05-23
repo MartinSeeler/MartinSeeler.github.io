@@ -1,8 +1,31 @@
 a {
   color: $primary-color;
+  text-decoration: none;
 
   &:hover {
     color: darken($primary-color, 10%);
     transition: $golden * 0.1s all ease-in;
+    text-decoration: underline;
   }
+}
+
+a.button {
+  color: $primary-color;
+  border-radius: 0.3em;
+  border: 1px solid;
+  text-decoration: none;
+  padding: 0.15em 0.6em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+
+  @include breakpoint('from-tablet') {
+    width: auto !important;
+    text-align: left;
+  }
+
+  &:HOVER {
+    background-color: $primary-color;
+    color: white;
+  }
+
 }

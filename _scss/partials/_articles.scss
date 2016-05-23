@@ -20,22 +20,63 @@ article {
 
     margin-top: $golden * 1em;
 
-    p, ol, ul, table, pre {
+    & > p, & > ol, & > ul, & > table, & > pre, & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
       @extend .col;
+      @include breakpoint(mobile) {
+        text-align: justify;
+      }
     }
 
-    p > a {
+    p > a, p > em, p > b, p > i, p > u, p > strong, p > code {
       display: inline !important;
       width: auto !important;
       float: none !important;
     }
 
-    blockquote {
+    @include breakpoint('from-desktop') {
+      & > ul, & > ol {
+        padding-left: 0;
+      }
+    }
+
+    pre > code.hljs {
+      line-height: inherit;
+      padding: 0;
+    }
+
+    div.highlighter-rouge {
+      background-color: #fdf6e3;
+      font-size: 80%;
+      line-height: 120%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+    }
+
+    code.highlighter-rouge {
+      font-size: 90%;
+      padding:0px 6px 3px;
+      background-color: $color-transparent;
+      color: $color-font-base;
+      border-radius: 5px;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    pre.highlight {
+      @extend .col;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+
+    & > blockquote {
       //text-align: center;
       background-color: $primary-color;
       font-size: 200%;
       color: $white;
       & > p {
+        @extend .col;
         padding-top: 1rem * $golden;
         padding-bottom: 1rem * $golden;
         margin-bottom: 0;
