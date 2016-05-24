@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Martin Seeler -- Developer -- @chasmo90
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    SASS, Gulp, Jekyll
