@@ -27,7 +27,12 @@ layout: default
         {{ content }}
     </main>
     <footer>
-        <p>Written by <span itemprop="author">Martin Seeler</span></p>
+
     </footer>
+    {% if page.comments %}
+    <section class="col">
+        {% include disqus.html %}
+    </section>
+    {% endif %}
 </article>
 
