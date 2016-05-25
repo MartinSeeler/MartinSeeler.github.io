@@ -12,7 +12,11 @@ layout: default
     <meta itemprop="headline" content="{{ page.title }}"/>
     <meta itemprop="keywords" content="{{ page.tags | join: ',' }}"/>
     <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}"/>
+    {% if page.feature-img %}
+    <header class="{% if page.light-headline %}light{% endif %}" style="background-image: url('{{ page.feature-img }}')">
+    {% else %}
     <header>
+    {% endif %}
         <h1 class="col">
             <span itemprop="headline">{{ page.title }}</span>
         </h1>

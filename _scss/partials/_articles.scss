@@ -4,14 +4,28 @@ article {
 
     h1 {
       margin-bottom: 0;
+      margin-top: 0;
+      padding-top: 1em;
     }
 
     time {
       color: $color-text-hint;
-
+      padding-bottom: 1em;
       & .fa {
         padding-right: $golden * 5px;
       }
+    }
+
+    &.light {
+
+      h1 {
+        color: white;
+      }
+
+      time {
+        color: $white;
+      }
+
     }
 
   }

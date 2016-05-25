@@ -2,6 +2,8 @@
 layout: blogpost
 category: blog
 title: Markdown and HTML Demo
+feature-img: "img/pattern/escheresque_ste.png"
+light-headline: true
 ---
 
 Jekyll supports the use of [Markdown](http://daringfireball.net/projects/markdown/syntax) with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
