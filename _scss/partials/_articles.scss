@@ -32,6 +32,7 @@ article {
 
   & > main {
 
+    text-align: justify;
     margin-top: $golden * 1em;
 
     & > p, & > ol, & > ul, & > table, & > pre, & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
