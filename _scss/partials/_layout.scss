@@ -7,3 +7,22 @@
     @include columns(1);
   }
 }
+
+hr.section-divider {
+  margin-top: 52px;
+  letter-spacing: 1em;
+}
+hr.section-divider {
+  display: block;
+  border: 0;
+  text-align: center
+}
+
+hr.section-divider:before {
+  content: '...';
+  display: inline-block;
+  margin-left: .6em;
+  color: rgba(0, 0, 0, .6);
+  position: relative;
+  top: -30px;
+}
