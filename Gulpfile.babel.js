@@ -8,7 +8,6 @@ const plumber = require('gulp-plumber');
 const uncss = require('gulp-uncss');
 const prefix = require('gulp-autoprefixer');
 const cp = require('child_process');
-
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const lib    = require('bower-files')();
@@ -52,7 +51,7 @@ gulp.task('sass', ['sass:validate'], () => {
       .pipe(sourcemaps.init())
       .pipe(sass.sync({includePaths: ['scss'], outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(prefix(['last 5 versions', '> 5%'], {cascade: true}))
-      //.pipe(uncss({html: ['_site/**/*.html']}))
+      // .pipe(uncss({html: ['_site/**/*.html'], ignore:['hljs', 'highlighter-rouge', 'highlight', 'code', 'pre']}))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('_site/css'))
       .pipe(browserSync.reload({stream: true}))
@@ -69,7 +68,12 @@ gulp.task('font-awesome', () => {
 gulp.task('fonts', ['font-awesome']);
 
 gulp.task('js', () => {
-  gulp.src(lib.ext('js').files)
+  // gulp.src(lib.ext('js').files)
+  gulp.src([
+    'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/rrssb/js/rrssb.min.js',
+    'bower_components/highlightjs/highlight.pack.min.js'
+  ])
       .pipe(concat('vendor.min.js'))
       .pipe(gulp.dest('./js/'));
 });
