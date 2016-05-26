@@ -30,10 +30,12 @@ layout: default
     <main itemprop="articleBody">
         {{ content }}
     </main>
-    <footer>
-
+    <hr class="section-divider">
+    <footer class="col">
+        {% include article-footer.html %}
     </footer>
     {% if page.comments %}
+    <hr class="section-divider">
     <section class="col">
         {% include disqus.html %}
     </section>

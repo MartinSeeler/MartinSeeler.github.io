@@ -3,6 +3,7 @@
 @import "modules/colors";
 @import "modules/variables";
 @import "bower_components/neutroncss/neutron";
+@import "bower_components/rrssb/scss/rrssb";
 
 body {
   width: 100%;
@@ -26,3 +27,5 @@ html {
 @import "partials/links";
 
 // Third-party
+// code syntax coloring copy pasted from highlightjs bower folder
+@import "vendor/codesyntax";
