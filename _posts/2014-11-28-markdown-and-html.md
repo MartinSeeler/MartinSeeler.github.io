@@ -2,7 +2,6 @@
 layout: blogpost
 category: blog
 title: Markdown and HTML Demo
-feature-img: "img/pattern/escheresque_ste.png"
 light-headline: true
 ---
 
