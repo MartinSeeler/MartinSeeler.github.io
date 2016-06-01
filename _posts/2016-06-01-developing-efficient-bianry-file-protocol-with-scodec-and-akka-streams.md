@@ -6,7 +6,7 @@ tags: scodec akka streams varint
 comments: true
 ---
 
-In this two part series, we will develop our very own file format to store stock prices as a time series
+In this two part series, we will develop our very own file format to store stock prices as time series
 using Scodec and Akka Streams. The first part will describe the encoding / decoding process and how we
 improve our binary protocol step by step. In the second part, we will use Akka Streams to read and write
 our own files in chunks with the help of backpressure.
@@ -42,7 +42,7 @@ import codecs._
 ```
 
 Let's start by encoding an `Int` into a `BitVector`. To do this, we need a `Codec[Int]`.
-Gladfully, Scodec comes with a big number of predefined codecs, so we don't have to implement everything by our self. We can
+Fortunately, Scodec comes with a big number of predefined codecs, so we don't have to implement everything by our self. We can
 use `scodec.codecs.int32` do achieve what we want. Here is how to use it.
 
 ```scala
@@ -75,7 +75,7 @@ case class Point(x: Int, y: Int)
 // defined class Point
 
 val pointCodec = (int32 :: int32).as[Point]
-// pointCodec: scodec.Codec[Point] = scodec.Codec$$anon$2@f48adb0
+// pointCodec: scodec.Codec[Point] = scodec.Codec$$anon$2@1b9cc190
 ```
 
 ## Domain Model Definition
@@ -93,7 +93,7 @@ case class Tick(time: Long, bid: Double, ask: Double)
 
 The most trivial way to encode and store our ticks is using a comma or tab separated file.
 It is easy to understand and can be used with a lot of applications, which makes it useful for all
-these Excel evangelists and paper traders out there.
+those Excel evangelists and paper traders out there.
 
 ```scala
 utf8 encode "1420148801108,1.20989,1.21049"
@@ -102,7 +102,7 @@ utf8 encode "1420148801108,1.20989,1.21049"
 
 Looking at the output, we can see that one tick is encoded with 232 bits. For our 1 million tick file,
 we can estimate a `232 * 1000000 / 8 / 1024 / 1024 = 27,65` MB file as a result. We will use this number as our
-base line and see, how much we can improve this number.
+baseline and see, how much we can improve this number.
 
 ## Implementing our first codec
 
@@ -111,7 +111,7 @@ as a single 64 bit Long number, followed by two 64-bit big endian IEEE 754 float
 
 ```scala
 val tickCodec = (long(64) :: double :: double).as[Tick]
-// tickCodec: scodec.Codec[Tick] = scodec.Codec$$anon$2@152706f7
+// tickCodec: scodec.Codec[Tick] = scodec.Codec$$anon$2@4456705
 
 tickCodec encode Tick(1420148801108L, 1.20989, 1.21049)
 // res9: scodec.Attempt[scodec.bits.BitVector] = Successful(BitVector(192 bits, 0x0000014aa776fe543ff35bb59ddc1e793ff35e2ac3222920))
@@ -128,7 +128,7 @@ The fact that a price is only represented up to a given precision makes it possi
 double values and use plain old integers instead.
 
 Prices can have a precision up to the fifth decimal place.
-As a consequence, we can use the factor `100.000` to multiply our `Double` and get an `Int` without loosing information.
+As a consequence, we can use the factor `100.000` to multiply our `Double` and get an `Int` without losing information.
 Let's define a new version for our ticks as `FactorizedTick` and some methods to easily switch between them.
 
 ```scala
@@ -139,7 +139,7 @@ case class FactorizedTick(time: Long, bid: Int, ask: Int)
 // defined class FactorizedTick
 
 val factorizedTickCodec = (long(64) :: int32 :: int32).as[FactorizedTick]
-// factorizedTickCodec: scodec.Codec[FactorizedTick] = scodec.Codec$$anon$2@21e7c7e9
+// factorizedTickCodec: scodec.Codec[FactorizedTick] = scodec.Codec$$anon$2@2bff5f88
 
 implicit final class TickOps(private val wrappedTick: Tick) extends AnyVal {
   def factorize: FactorizedTick =
@@ -163,7 +163,7 @@ method in comparison to the CSV version! Again, this is the binary representatio
 
 ## Using delta encoding and Varints
 
-Instead of storing each tick on it's own, we can make use of the fact that we want to safe an ordered series of ticks.
+Instead of storing each tick on its own, we can make use of the fact that we want to save an ordered series of ticks.
 We only have to encode the first tick as usual. Every subsequent tick can be represented as the
 difference to the previous one. This method is called [Delta encoding](https://en.wikipedia.org/wiki/Delta_encoding).
 
@@ -172,7 +172,7 @@ case class FactorizedDeltaTick(timeDelta: Long, bidDelta: Int, askDelta: Int)
 // defined class FactorizedDeltaTick
 
 val factorizedDeltaTickCodec = (long(64) :: int32 :: int32).as[FactorizedDeltaTick]
-// factorizedDeltaTickCodec: scodec.Codec[FactorizedDeltaTick] = scodec.Codec$$anon$2@25971e73
+// factorizedDeltaTickCodec: scodec.Codec[FactorizedDeltaTick] = scodec.Codec$$anon$2@4243eeb5
 
 implicit final class FactorizedTickOps(private val wrappedFactorizedTick: FactorizedTick) extends AnyVal {
   def deltaTo(prevFactorizedTick: FactorizedTick): FactorizedDeltaTick =
@@ -238,24 +238,24 @@ vint encode 2147483647
 // res23: scodec.Attempt[scodec.bits.BitVector] = Successful(BitVector(40 bits, 0xffffffff07))
 ```
 
-As we can see, small numbers are stored very efficient. The following is the new codec for our `FactorizedDeltaTick` case
+As we can see, small numbers are stored very efficiently. The following is the new codec for our `FactorizedDeltaTick` case
 class using `vint` and `vlong`.
 
 ```scala
 val factorizedDeltaTickCodecV = (vlong :: vint :: vint).as[FactorizedDeltaTick]
-// factorizedDeltaTickCodecV: scodec.Codec[FactorizedDeltaTick] = scodec.Codec$$anon$2@4515e47d
+// factorizedDeltaTickCodecV: scodec.Codec[FactorizedDeltaTick] = scodec.Codec$$anon$2@781b8436
 
 factorizedDeltaTickCodecV encode delta
 // res24: scodec.Attempt[scodec.bits.BitVector] = Successful(BitVector(24 bits, 0x63100e))
 ```
 
-This time, we reduced the memory consumption big times! Only 24 bits are needed to store our delta to the previous tick.
+This time, we reduced the memory consumption big time! Only 24 bits are needed to store our delta to the previous tick.
 Of course this will not work every time. Since we only have 7 of 8 bits available in our `vint`, we can only represent numbers from 0 to 127 with one byte.
 When the price or time deltas are greater than 127, we need another byte. The following is the binary representation of our efficient delta tick.
 
 ![Delta Codec](img/posts/dtff/codec-3.png)
 
-So varints seems to be the holy grail to store stock prices. The truth is, this is only the case when the price changes upwards. Representing negative
+So varints seem to be the holy grail to store stock prices. The truth is, this is only the case when the price changes upwards. Representing negative
 numbers, in our case a decreasing price delta, needs exactly 5 bytes. This is because the most significant bit
 is used to indicate if the next byte is related to the current number, leaving us with only 7 bits remaining for our value.
 Therefore, 5 bytes are needed to represent negative numbers, even for small numbers.
@@ -275,14 +275,14 @@ What a wonderful world would it be when prices would only move upwards. In reali
 Even tough there is another way to store small positive and also negative numbers, which is called
 [ZigZag encoding](https://developers.google.com/protocol-buffers/docs/encoding#signed-integers), we will use a more trivial way to fix this issue.
 We can use one bit to indicate, whether the next delta is positive (0) or negative (1) and then storing only the absolute value. Here is the case class and the codec for this
-non negative delta class.
+non-negative delta class.
 
 ```scala
 case class NonNegativeFactorizedDeltaTick(timeDelta: Long, bidDeltaNeg: Boolean, bidDelta: Int, askDeltaNeg: Boolean, askDelta: Int)
 // defined class NonNegativeFactorizedDeltaTick
 
 val nonNegFactorizedDeltaTickCodecV = (vlong :: bool :: vint :: bool :: vint).as[NonNegativeFactorizedDeltaTick]
-// nonNegFactorizedDeltaTickCodecV: scodec.Codec[NonNegativeFactorizedDeltaTick] = scodec.Codec$$anon$2@6bd7ece7
+// nonNegFactorizedDeltaTickCodecV: scodec.Codec[NonNegativeFactorizedDeltaTick] = scodec.Codec$$anon$2@77269d0a
 
 implicit class FactorizedDeltaTickOps(private val wrappedFactorizedDeltaTick: FactorizedDeltaTick) extends AnyVal {
 
@@ -303,7 +303,7 @@ nonNegFactorizedDeltaTickCodecV encode nonNegativeDelta
 // res27: scodec.Attempt[scodec.bits.BitVector] = Successful(BitVector(26 bits, 0x0a82c20))
 ```
 
-Now we've got it. Even negative deltas can now be stored very efficient using varints. We did increase
+Now we've got it. Even negative deltas can now be stored very efficiently using varints. We did increase
 the minimum size from 24 to 26 bits with our two bits as negative indicators, but we decreased the overall
 storage needed for up and down movements. Expecting evenly distributed up and down moves, we decreased
 our average storage space from 77 bits (26 bits for positives and 128 bits for negatives) down to just 26 bits!
