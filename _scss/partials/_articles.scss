@@ -11,6 +11,7 @@ article {
     ul.header-meta {
       color: $color-text-hint;
       padding-bottom: 1em;
+      margin-bottom: 0;
       padding-left: 0;
       & .fa {
         padding-right: $golden * 5px;
