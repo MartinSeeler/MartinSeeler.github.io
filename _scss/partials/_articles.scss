@@ -8,11 +8,17 @@ article {
       padding-top: 1em;
     }
 
-    time {
+    ul.header-meta {
       color: $color-text-hint;
       padding-bottom: 1em;
+      padding-left: 0;
       & .fa {
         padding-right: $golden * 5px;
+      }
+
+      li {
+        margin-right: 1em;
+        display: inline-block;
       }
     }
 

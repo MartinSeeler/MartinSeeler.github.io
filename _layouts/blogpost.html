@@ -21,10 +21,21 @@ layout: default
             <span itemprop="headline">{{ page.title }}</span>
         </h1>
         <div class="col">
-            <time itemprop="datePublished dateModified" content="{{ page.date | date: '%Y-%m-%d' }}"
-                  datetime="{{ page.date | date: '%Y-%m-%d' }}">
-                <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ page.date | date: "%b %-d, %Y" }}</small>
-            </time>
+            <ul class="header-meta">
+                <li>
+                    <time itemprop="datePublished dateModified" content="{{ page.date | date: '%Y-%m-%d' }}"
+                          datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                        <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ page.date | date: "%b %-d, %Y" }}
+                        </small>
+                    </time>
+                </li>
+                <li>
+                    <small>
+                        <i class="fa fa-info"></i>
+                        {{ content | number_of_words }} words
+                    </small>
+                </li>
+            </ul>
         </div>
     </header>
     <main itemprop="articleBody">

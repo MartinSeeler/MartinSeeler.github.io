@@ -18,10 +18,21 @@ description: Collection of posts about programming and Forex trading
                 </a>
             </h1>
             <div class="col">
-                <time itemprop="datePublished dateModified" content="{{ post.date | date: '%Y-%m-%d' }}"
-                      datetime="{{ post.date | date: '%Y-%m-%d' }}">
-                    <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ post.date | date: "%b %-d, %Y" }}</small>
-                </time>
+                <ul class="header-meta">
+                    <li>
+                        <time itemprop="datePublished dateModified" content="{{ post.date | date: '%Y-%m-%d' }}"
+                              datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                            <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ post.date | date: "%b %-d, %Y" }}
+                            </small>
+                        </time>
+                    </li>
+                    <li>
+                        <small>
+                            <i class="fa fa-info"></i>
+                            {{ post.content | number_of_words }} words
+                        </small>
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
