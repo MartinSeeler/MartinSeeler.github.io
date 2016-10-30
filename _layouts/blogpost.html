@@ -13,43 +13,48 @@ layout: default
     <meta itemprop="keywords" content="{{ page.tags | join: ',' }}"/>
     <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}"/>
     {% if page.feature-img %}
-    <header class="{% if page.light-headline %}light{% endif %}" style="background-image: url('{{ page.feature-img }}')">
-    {% else %}
-    <header>
-    {% endif %}
-        <h1 class="col">
-            <span itemprop="headline">{{ page.title }}</span>
-        </h1>
-        <div class="col">
-            <ul class="header-meta">
-                <li>
-                    <time itemprop="datePublished dateModified" content="{{ page.date | date: '%Y-%m-%d' }}"
-                          datetime="{{ page.date | date: '%Y-%m-%d' }}">
-                        <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ page.date | date: "%b %-d, %Y" }}
+    <header class="{% if page.light-headline %}light{% endif %}"
+            style="background-image: url('{{ page.feature-img }}')">
+        {% else %}
+        <header>
+            {% endif %}
+            <h1 class="col">
+                <span itemprop="headline">{{ page.title }}</span>
+            </h1>
+            <div class="col">
+                <ul class="header-meta">
+                    <li>
+                        <time itemprop="datePublished dateModified" content="{{ page.date | date: '%Y-%m-%d' }}"
+                              datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                            <small><i class="fa fa-clock-o" aria-hidden="true"></i>{{ page.date | date: "%b %-d, %Y" }}
+                            </small>
+                        </time>
+                    </li>
+                    <li>
+                        <small>
+                            <i class="fa fa-info"></i>
+                            {{ content | number_of_words }} words
                         </small>
-                    </time>
-                </li>
-                <li>
-                    <small>
-                        <i class="fa fa-info"></i>
-                        {{ content | number_of_words }} words
-                    </small>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <main itemprop="articleBody">
-        {{ content }}
-    </main>
-    <hr class="section-divider">
-    <footer class="col">
-        {% include article-footer.html %}
-    </footer>
-    {% if page.comments %}
-    <hr class="section-divider">
-    <section class="col">
-        {% include disqus.html %}
-    </section>
-    {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main itemprop="articleBody">
+            {{ content }}
+        </main>
+        <hr class="section-divider">
+        <footer class="col">
+            {% include article-footer.html %}
+        </footer>
+        <hr class="section-divider">
+        <section class="col">
+            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&storeId=martinseeler-20&adInstanceId=a75c1c72-629b-4151-b28c-8eb43b1b2f57"></script>
+        </section>
+        {% if page.comments %}
+        <hr class="section-divider">
+        <section class="col">
+            {% include disqus.html %}
+        </section>
+        {% endif %}
 </article>
 

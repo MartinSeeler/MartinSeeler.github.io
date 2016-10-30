@@ -28,6 +28,16 @@ and the following non-goals:
 
 So, let's dive in.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Test -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8931964106195185"
+     data-ad-slot="1207987552"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Basic Usage
 

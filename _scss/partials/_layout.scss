@@ -1,11 +1,21 @@
 .col {
+
   @include columns(1, $container-width: 90%);
+  
   @include breakpoint(from-tablet) {
-    @include columns(1, $container-width: 90%);
+    @include container-width(80%);
+
+    @include breakpoint(from-desktop) {
+      @include container-width(50%);
+    }
+
   }
-  @include breakpoint(from-desktop) {
-    @include columns(1);
-  }
+  // @include breakpoint(from-tablet) {
+  //   @include columns(1);
+  // }
+  // @include breakpoint(from-desktop) {
+  //   @include columns(1);
+  // }
 }
 
 hr.section-divider {

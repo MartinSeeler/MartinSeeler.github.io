@@ -13,6 +13,17 @@ our own files in chunks with the help of backpressure.
 
 The complete project can be found [here on Github](https://github.com/MartinSeeler/dense-tick-file-format).
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Test -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8931964106195185"
+     data-ad-slot="1207987552"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## The Goal
 
 The goal of this post series is to show the usage and process of developing an efficient binary file protocol
