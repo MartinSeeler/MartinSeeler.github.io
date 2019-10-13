@@ -1,19 +1,23 @@
-_site/
-.sass-cache/
-*.swp
-node_modules/
-*.iml
-*.ipr
-*.iws
-.idea/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
-*.sublime-workspace
-*.sublime-project
-sftp-config.json
-bower_components
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

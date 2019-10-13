@@ -1,42 +1,36 @@
 {
-  "name": "MartinSeeler.github.io",
+  "name": "martinseeler.com",
   "version": "0.1.0",
-  "description": "Blog by Martin Seeler about Java and Dev Stuff",
-  "main": "index.js",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MartinSeeler/MartinSeeler.github.io.git"
-  },
-  "keywords": [],
-  "author": "Martin Seeler",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MartinSeeler/MartinSeeler.github.io/issues"
-  },
-  "homepage": "https://github.com/MartinSeeler/MartinSeeler.github.io",
-  "devDependencies": {
-    "babel-core": "^6.9.0",
-    "browser-sync": "^2.12.8",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-gzip": "^1.3.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.1",
-    "gulp-scss-lint": "^0.4.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uncss": "^1.0.5",
-    "node-sass": "^3.7.0"
-  },
   "dependencies": {
-    "bower-files": "^3.13.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-concat-vendor": "0.0.4",
-    "gulp-uglify": "^1.5.3",
-    "highlight.js": "^9.4.0",
-    "wiredep": "^4.0.0"
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.12",
+    "@types/react": "16.9.5",
+    "@types/react-dom": "16.9.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "typescript": "3.6.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
